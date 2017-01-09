@@ -16,7 +16,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+
+    self.client = [MSClient
+                   clientWithApplicationURLString:@"https://mobileapp99.azurewebsites.net"
+                   ];
+    
     return YES;
 }
 
