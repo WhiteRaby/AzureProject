@@ -1,0 +1,336 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A842AE471E23EF7900C9D317 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A842AE461E23EF7900C9D317 /* main.m */; };
+		A842AE4A1E23EF7900C9D317 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A842AE491E23EF7900C9D317 /* AppDelegate.m */; };
+		A842AE4D1E23EF7900C9D317 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A842AE4C1E23EF7900C9D317 /* ViewController.m */; };
+		A842AE501E23EF7900C9D317 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A842AE4E1E23EF7900C9D317 /* Main.storyboard */; };
+		A842AE531E23EF7900C9D317 /* AzureProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A842AE511E23EF7900C9D317 /* AzureProject.xcdatamodeld */; };
+		A842AE551E23EF7900C9D317 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A842AE541E23EF7900C9D317 /* Assets.xcassets */; };
+		A842AE581E23EF7900C9D317 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A842AE561E23EF7900C9D317 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A842AE421E23EF7900C9D317 /* AzureProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AzureProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A842AE461E23EF7900C9D317 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A842AE481E23EF7900C9D317 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A842AE491E23EF7900C9D317 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A842AE4B1E23EF7900C9D317 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A842AE4C1E23EF7900C9D317 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A842AE4F1E23EF7900C9D317 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A842AE521E23EF7900C9D317 /* AzureProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AzureProject.xcdatamodel; sourceTree = "<group>"; };
+		A842AE541E23EF7900C9D317 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A842AE571E23EF7900C9D317 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A842AE591E23EF7900C9D317 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A842AE3F1E23EF7900C9D317 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A842AE391E23EF7900C9D317 = {
+			isa = PBXGroup;
+			children = (
+				A842AE441E23EF7900C9D317 /* AzureProject */,
+				A842AE431E23EF7900C9D317 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A842AE431E23EF7900C9D317 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A842AE421E23EF7900C9D317 /* AzureProject.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A842AE441E23EF7900C9D317 /* AzureProject */ = {
+			isa = PBXGroup;
+			children = (
+				A842AE481E23EF7900C9D317 /* AppDelegate.h */,
+				A842AE491E23EF7900C9D317 /* AppDelegate.m */,
+				A842AE4B1E23EF7900C9D317 /* ViewController.h */,
+				A842AE4C1E23EF7900C9D317 /* ViewController.m */,
+				A842AE4E1E23EF7900C9D317 /* Main.storyboard */,
+				A842AE541E23EF7900C9D317 /* Assets.xcassets */,
+				A842AE561E23EF7900C9D317 /* LaunchScreen.storyboard */,
+				A842AE591E23EF7900C9D317 /* Info.plist */,
+				A842AE511E23EF7900C9D317 /* AzureProject.xcdatamodeld */,
+				A842AE451E23EF7900C9D317 /* Supporting Files */,
+			);
+			path = AzureProject;
+			sourceTree = "<group>";
+		};
+		A842AE451E23EF7900C9D317 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A842AE461E23EF7900C9D317 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A842AE411E23EF7900C9D317 /* AzureProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A842AE5C1E23EF7900C9D317 /* Build configuration list for PBXNativeTarget "AzureProject" */;
+			buildPhases = (
+				A842AE3E1E23EF7900C9D317 /* Sources */,
+				A842AE3F1E23EF7900C9D317 /* Frameworks */,
+				A842AE401E23EF7900C9D317 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AzureProject;
+			productName = AzureProject;
+			productReference = A842AE421E23EF7900C9D317 /* AzureProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A842AE3A1E23EF7900C9D317 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Alex Golovaschenko";
+				TargetAttributes = {
+					A842AE411E23EF7900C9D317 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 3M69Q4BX5B;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A842AE3D1E23EF7900C9D317 /* Build configuration list for PBXProject "AzureProject" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A842AE391E23EF7900C9D317;
+			productRefGroup = A842AE431E23EF7900C9D317 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A842AE411E23EF7900C9D317 /* AzureProject */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A842AE401E23EF7900C9D317 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A842AE581E23EF7900C9D317 /* LaunchScreen.storyboard in Resources */,
+				A842AE551E23EF7900C9D317 /* Assets.xcassets in Resources */,
+				A842AE501E23EF7900C9D317 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A842AE3E1E23EF7900C9D317 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A842AE4D1E23EF7900C9D317 /* ViewController.m in Sources */,
+				A842AE4A1E23EF7900C9D317 /* AppDelegate.m in Sources */,
+				A842AE471E23EF7900C9D317 /* main.m in Sources */,
+				A842AE531E23EF7900C9D317 /* AzureProject.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A842AE4E1E23EF7900C9D317 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A842AE4F1E23EF7900C9D317 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A842AE561E23EF7900C9D317 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A842AE571E23EF7900C9D317 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A842AE5A1E23EF7900C9D317 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A842AE5B1E23EF7900C9D317 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A842AE5D1E23EF7900C9D317 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3M69Q4BX5B;
+				INFOPLIST_FILE = AzureProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = by.Alex.AzureProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A842AE5E1E23EF7900C9D317 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3M69Q4BX5B;
+				INFOPLIST_FILE = AzureProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = by.Alex.AzureProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A842AE3D1E23EF7900C9D317 /* Build configuration list for PBXProject "AzureProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A842AE5A1E23EF7900C9D317 /* Debug */,
+				A842AE5B1E23EF7900C9D317 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A842AE5C1E23EF7900C9D317 /* Build configuration list for PBXNativeTarget "AzureProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A842AE5D1E23EF7900C9D317 /* Debug */,
+				A842AE5E1E23EF7900C9D317 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A842AE511E23EF7900C9D317 /* AzureProject.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A842AE521E23EF7900C9D317 /* AzureProject.xcdatamodel */,
+			);
+			currentVersion = A842AE521E23EF7900C9D317 /* AzureProject.xcdatamodel */;
+			path = AzureProject.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A842AE3A1E23EF7900C9D317 /* Project object */;
+}
