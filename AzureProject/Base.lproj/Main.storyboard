@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--LoginVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -49,7 +49,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="eWl-Km-Tkz" kind="show" identifier="SignIn" id="NxD-Om-Z5N"/>
+                                    <action selector="signInAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZEb-bj-c5l"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stay signed in" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bUU-CM-cxd">
@@ -99,6 +99,7 @@
                         <outlet property="loginTextField" destination="wKz-fR-ttO" id="uGh-7Q-Xk5"/>
                         <outlet property="passwordTextField" destination="a5F-AV-67K" id="Iin-Te-YZa"/>
                         <outlet property="stayOnlineSwitch" destination="ki6-hp-CqS" id="eIu-Vd-dEm"/>
+                        <segue destination="eWl-Km-Tkz" kind="show" identifier="SignIn" id="emV-1t-Ggy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

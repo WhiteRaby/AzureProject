@@ -6,11 +6,12 @@
 //  Copyright © 2017 Alex Golovaschenko. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "LoginVC.h"
 #import "ServerManager.h"
 #import "User.h"
+#import <MBProgressHUD.h>
 
-@interface ViewController ()
+@interface LoginVC ()
 
 @property (weak, nonatomic) IBOutlet UITextField *loginTextField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
@@ -20,7 +21,7 @@
 
 @end
 
-@implementation ViewController
+@implementation LoginVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -66,31 +67,28 @@
     [userDefaults synchronize];
 }
 
-// catachrom123@gmail.com cata123chrom
-- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
-
-    if ([identifier isEqualToString:@"SignIn"]) {
+- (IBAction)signInAction:(id)sender {
+    
+    NSString *login = self.loginTextField.text;
+    NSString *password = self.passwordTextField.text;
+    
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    
+    [[ServerManager sharedInstance] getUserWithLogin:login andPassword:password completion:^(BOOL success, id result) {
         
-        NSString *login = self.loginTextField.text;
-        NSString *password = self.passwordTextField.text;
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [MBProgressHUD hideHUDForView:self.view animated:YES];
+        });
         
-        for (User *user in self.users) {
-            if ([[user.login lowercaseString] isEqualToString:[login lowercaseString]] &&
-                [user.password isEqualToString:password]) {
-                
-                [self saveLoginAndPassword];
-                
-                return YES;
-            }
+        if (success) {
+            [self saveLoginAndPassword];
+            [self performSegueWithIdentifier:@"SignIn" sender:self];
+        } else {
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                [self showSignInError];
+            });
         }
-        [self showSignInError];
-        return NO;
-        
-    } else if ([identifier isEqualToString:@"Register"]) {
-        return YES;
-    } else {
-        return NO;
-    }
+    }];
 }
 
 - (void)showSignInError {

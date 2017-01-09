@@ -64,6 +64,32 @@
     }];
 }
 
+- (void)getUserWithLogin:(NSString*)login andPassword:(NSString*)password completion:(CompletionBlock)completion{
+    
+    // Create a predicate that finds items where complete is false
+    NSPredicate * predicate = [NSPredicate predicateWithFormat:@"Login == %@ AND Password == %@", login, password];
+    // Query the TodoItem table
+    [self.userTable readWithPredicate:predicate completion:^(MSQueryResult *result, NSError *error) {
+        if (error) {
+            if (completion) {
+                completion(NO, error);
+            }
+        } else {
+            
+            if ([result.items count] > 0) {
+                User *user = [self parseUser:[result.items firstObject]];
+                if (completion) {
+                    completion(YES, user);
+                }
+            } else {
+                if (completion) {
+                    completion(NO, result.items);
+                }
+            }
+        }
+    }];
+}
+
 - (User*)parseUser:(NSDictionary*)item {
     
     User *user = [User new];

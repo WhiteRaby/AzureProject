@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50CBAF009903D7DE672D69FC /* libPods-AzureProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FF0272F5974D744C69EDD7E /* libPods-AzureProject.a */; };
 		A842AE471E23EF7900C9D317 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A842AE461E23EF7900C9D317 /* main.m */; };
 		A842AE4A1E23EF7900C9D317 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A842AE491E23EF7900C9D317 /* AppDelegate.m */; };
-		A842AE4D1E23EF7900C9D317 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A842AE4C1E23EF7900C9D317 /* ViewController.m */; };
+		A842AE4D1E23EF7900C9D317 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A842AE4C1E23EF7900C9D317 /* LoginVC.m */; };
 		A842AE501E23EF7900C9D317 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A842AE4E1E23EF7900C9D317 /* Main.storyboard */; };
 		A842AE531E23EF7900C9D317 /* AzureProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A842AE511E23EF7900C9D317 /* AzureProject.xcdatamodeld */; };
 		A842AE551E23EF7900C9D317 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A842AE541E23EF7900C9D317 /* Assets.xcassets */; };
@@ -21,12 +22,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A7E54BF9F370932730CF193 /* Pods-AzureProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AzureProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AzureProject/Pods-AzureProject.debug.xcconfig"; sourceTree = "<group>"; };
+		4AE5987F6D9CE4E3F4E3CCF4 /* Pods-AzureProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AzureProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-AzureProject/Pods-AzureProject.release.xcconfig"; sourceTree = "<group>"; };
+		4FF0272F5974D744C69EDD7E /* libPods-AzureProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AzureProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A842AE421E23EF7900C9D317 /* AzureProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AzureProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A842AE461E23EF7900C9D317 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A842AE481E23EF7900C9D317 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A842AE491E23EF7900C9D317 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A842AE4B1E23EF7900C9D317 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A842AE4C1E23EF7900C9D317 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A842AE4B1E23EF7900C9D317 /* LoginVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
+		A842AE4C1E23EF7900C9D317 /* LoginVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
 		A842AE4F1E23EF7900C9D317 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A842AE521E23EF7900C9D317 /* AzureProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AzureProject.xcdatamodel; sourceTree = "<group>"; };
 		A842AE541E23EF7900C9D317 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -47,18 +51,29 @@
 			files = (
 				A842AE6C1E23F83000C9D317 /* WebKit.framework in Frameworks */,
 				A842AE601E23EFAC00C9D317 /* MicrosoftAzureMobile.framework in Frameworks */,
+				50CBAF009903D7DE672D69FC /* libPods-AzureProject.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7015EEC61D760CA0AE2B39C1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3A7E54BF9F370932730CF193 /* Pods-AzureProject.debug.xcconfig */,
+				4AE5987F6D9CE4E3F4E3CCF4 /* Pods-AzureProject.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A842AE391E23EF7900C9D317 = {
 			isa = PBXGroup;
 			children = (
 				A842AE441E23EF7900C9D317 /* AzureProject */,
 				A842AE431E23EF7900C9D317 /* Products */,
 				A842AE6A1E23F83000C9D317 /* Frameworks */,
+				7015EEC61D760CA0AE2B39C1 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,8 +113,8 @@
 		A842AE641E23F07F00C9D317 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				A842AE4B1E23EF7900C9D317 /* ViewController.h */,
-				A842AE4C1E23EF7900C9D317 /* ViewController.m */,
+				A842AE4B1E23EF7900C9D317 /* LoginVC.h */,
+				A842AE4C1E23EF7900C9D317 /* LoginVC.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -128,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				A842AE6B1E23F83000C9D317 /* WebKit.framework */,
+				4FF0272F5974D744C69EDD7E /* libPods-AzureProject.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -139,9 +155,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A842AE5C1E23EF7900C9D317 /* Build configuration list for PBXNativeTarget "AzureProject" */;
 			buildPhases = (
+				318EDB1CB28443717DDB80AE /* [CP] Check Pods Manifest.lock */,
 				A842AE3E1E23EF7900C9D317 /* Sources */,
 				A842AE3F1E23EF7900C9D317 /* Frameworks */,
 				A842AE401E23EF7900C9D317 /* Resources */,
+				4335D054280B4728F919BFE2 /* [CP] Embed Pods Frameworks */,
+				F0CDCDD71536DC6F6A205450 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -199,13 +218,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		318EDB1CB28443717DDB80AE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4335D054280B4728F919BFE2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AzureProject/Pods-AzureProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0CDCDD71536DC6F6A205450 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AzureProject/Pods-AzureProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A842AE3E1E23EF7900C9D317 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A842AE631E23EFE200C9D317 /* ServerManager.m in Sources */,
-				A842AE4D1E23EF7900C9D317 /* ViewController.m in Sources */,
+				A842AE4D1E23EF7900C9D317 /* LoginVC.m in Sources */,
 				A842AE691E23F15D00C9D317 /* User.m in Sources */,
 				A842AE4A1E23EF7900C9D317 /* AppDelegate.m in Sources */,
 				A842AE471E23EF7900C9D317 /* main.m in Sources */,
@@ -327,6 +394,7 @@
 		};
 		A842AE5D1E23EF7900C9D317 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A7E54BF9F370932730CF193 /* Pods-AzureProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3M69Q4BX5B;
@@ -343,6 +411,7 @@
 		};
 		A842AE5E1E23EF7900C9D317 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AE5987F6D9CE4E3F4E3CCF4 /* Pods-AzureProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3M69Q4BX5B;
@@ -376,6 +445,7 @@
 				A842AE5E1E23EF7900C9D317 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
