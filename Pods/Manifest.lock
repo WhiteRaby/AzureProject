@@ -1,0 +1,15 @@
+PODS:
+  - DGActivityIndicatorView (2.1.1)
+  - MBProgressHUD (1.0.0)
+
+DEPENDENCIES:
+  - DGActivityIndicatorView
+  - MBProgressHUD (~> 1.0.0)
+
+SPEC CHECKSUMS:
+  DGActivityIndicatorView: ff2c76073d79692f724863c8dd38685866a03cb6
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+
+PODFILE CHECKSUM: f0030610d11901339c00a3a70529d1cd6dd778ba
+
+COCOAPODS: 1.1.1
