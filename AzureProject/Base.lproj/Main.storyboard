@@ -126,30 +126,11 @@
                         <outlet property="passwordTextField" destination="a5F-AV-67K" id="Iin-Te-YZa"/>
                         <outlet property="stayOnlineSwitch" destination="ki6-hp-CqS" id="eIu-Vd-dEm"/>
                         <outlet property="titleConstraint" destination="uvs-gd-wM7" id="Gx7-Np-afi"/>
-                        <segue destination="eWl-Km-Tkz" kind="show" identifier="SignIn" id="emV-1t-Ggy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="103.89805097451276"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="IJ0-3G-gDm">
-            <objects>
-                <viewController id="eWl-Km-Tkz" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="3hb-53-t5A"/>
-                        <viewControllerLayoutGuide type="bottom" id="OEQ-DV-JaZ"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="68e-3u-02I">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BlJ-uU-zM9" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="901.60000000000002" y="103.89805097451276"/>
         </scene>
         <!--RegisterVC-->
         <scene sceneID="5gz-Yq-Rk0">
@@ -247,6 +228,6 @@
     </scenes>
     <resources>
         <image name="LoginVCBackground" width="1920" height="1080"/>
-        <image name="RegisterVCBackground" width="1600" height="1600"/>
+        <image name="RegisterVCBackground" width="2560" height="1600"/>
     </resources>
 </document>

@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>DGActivityIndicatorView.xcscheme</key>
+		<key>LGSideMenuController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -27,12 +27,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BF631A0FAD69064233FA45CCECEFC90C</key>
+		<key>D35C0026520E31ADC3DD65E175AB48C9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FBA9754FB7A82758566D360BD30C2517</key>
+		<key>F1022135014AC3B84F17A4F91E01916A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

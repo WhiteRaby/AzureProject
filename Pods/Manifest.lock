@@ -1,15 +1,15 @@
 PODS:
-  - DGActivityIndicatorView (2.1.1)
+  - LGSideMenuController (1.0.10)
   - MBProgressHUD (1.0.0)
 
 DEPENDENCIES:
-  - DGActivityIndicatorView
+  - LGSideMenuController
   - MBProgressHUD (~> 1.0.0)
 
 SPEC CHECKSUMS:
-  DGActivityIndicatorView: ff2c76073d79692f724863c8dd38685866a03cb6
+  LGSideMenuController: 8682bdbd0008c1acfbce95eaf96cc3657bca5f95
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
 
-PODFILE CHECKSUM: f0030610d11901339c00a3a70529d1cd6dd778ba
+PODFILE CHECKSUM: 46cc212c92c4802495cbdc7a2e01865b73b2f3a2
 
 COCOAPODS: 1.1.1
