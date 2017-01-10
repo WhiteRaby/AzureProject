@@ -10,12 +10,15 @@
 #import "ServerManager.h"
 #import "User.h"
 #import <MBProgressHUD.h>
+#import "RegisterVC.h"
 
-@interface LoginVC ()
+@interface LoginVC () <UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *loginTextField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
 @property (weak, nonatomic) IBOutlet UISwitch *stayOnlineSwitch;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *titleConstraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *loginConstraint;
 
 @property (strong, nonatomic) NSArray *users;
 
@@ -90,6 +93,57 @@
         }
     }];
 }
+
+#pragma mark - UITextFieldDelegate
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField {
+    
+    [self.view layoutIfNeeded];
+    
+    self.titleConstraint.constant = -140.f;
+    self.loginConstraint.constant = 100.f;
+    
+    [UIView animateWithDuration:0.3f delay:0.f options:UIViewAnimationOptionCurveEaseOut animations:^{
+        [self.view layoutIfNeeded];
+    } completion:nil];
+}
+
+- (void)textFieldDidEndEditing:(UITextField *)textField {
+    
+    [self.view layoutIfNeeded];
+    
+    self.titleConstraint.constant = 100.f;
+    self.loginConstraint.constant = 250.f;
+    
+    [UIView animateWithDuration:0.3f delay:0.f options:UIViewAnimationOptionCurveEaseOut animations:^{
+        [self.view layoutIfNeeded];
+    } completion:nil];
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    
+    if (textField == self.loginTextField) {
+        [self.passwordTextField becomeFirstResponder];
+    } else {
+        [textField resignFirstResponder];
+    }
+    return YES;
+}
+
+#pragma mark - SegueActions
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    if ([segue.identifier isEqualToString:@"Register"]) {
+        ((RegisterVC*)segue.destinationViewController).completion = ^(User *user) {
+            self.loginTextField.text = user.login;
+            self.passwordTextField.text = user.password;
+            self.stayOnlineSwitch.on = NO;
+        };
+    }
+}
+
+#pragma mark - Alerts
 
 - (void)showSignInError {
     

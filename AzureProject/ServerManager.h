@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+@class User;
+
 typedef void (^CompletionBlock) (BOOL success, id result);
 
 @interface ServerManager : NSObject
@@ -15,5 +17,6 @@ typedef void (^CompletionBlock) (BOOL success, id result);
 + (ServerManager*)sharedInstance;
 - (void)getUsersWithCompletion:(CompletionBlock)completion;
 - (void)getUserWithLogin:(NSString*)login andPassword:(NSString*)password completion:(CompletionBlock)completion;
+- (void)saveUser:(User*)user completion:(CompletionBlock)completion;
 
 @end

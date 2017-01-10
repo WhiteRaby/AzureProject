@@ -55,7 +55,7 @@
         } else {
             NSMutableArray *users = [NSMutableArray array];
             for(NSDictionary *item in result.items) { // items is NSArray of records that match query
-                [users addObject:[self parseUser:item]];
+                [users addObject:[User parseUser:item]];
             }
             if (completion) {
                 completion(YES, [users copy]);
@@ -64,7 +64,7 @@
     }];
 }
 
-- (void)getUserWithLogin:(NSString*)login andPassword:(NSString*)password completion:(CompletionBlock)completion{
+- (void)getUserWithLogin:(NSString*)login andPassword:(NSString*)password completion:(CompletionBlock)completion {
     
     // Create a predicate that finds items where complete is false
     NSPredicate * predicate = [NSPredicate predicateWithFormat:@"Login == %@ AND Password == %@", login, password];
@@ -77,7 +77,7 @@
         } else {
             
             if ([result.items count] > 0) {
-                User *user = [self parseUser:[result.items firstObject]];
+                User *user = [User parseUser:[result.items firstObject]];
                 if (completion) {
                     completion(YES, user);
                 }
@@ -90,13 +90,19 @@
     }];
 }
 
-- (User*)parseUser:(NSDictionary*)item {
+- (void)saveUser:(User*)user completion:(CompletionBlock)completion {
     
-    User *user = [User new];
-    user.ID = [item objectForKey:@"id"];
-    user.login = [item objectForKey:@"Login"];
-    user.password = [item objectForKey:@"Password"];
-    return user;
+    [self.userTable insert:[user dictionary] completion:^(NSDictionary *result, NSError *error) {
+        if(error) {
+            if (completion) {
+                completion(NO, error);
+            }
+        } else {
+            if (completion) {
+                completion(YES, result);
+            }
+        }
+    }];
 }
 
 

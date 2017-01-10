@@ -14,4 +14,7 @@
 @property (nonatomic, strong) NSString *login;
 @property (nonatomic, strong) NSString *password;
 
++ (User*)parseUser:(NSDictionary*)item;
+- (NSDictionary*)dictionary;
+
 @end

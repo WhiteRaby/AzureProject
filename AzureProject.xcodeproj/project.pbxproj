@@ -19,6 +19,7 @@
 		A842AE631E23EFE200C9D317 /* ServerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A842AE621E23EFE200C9D317 /* ServerManager.m */; };
 		A842AE691E23F15D00C9D317 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = A842AE681E23F15D00C9D317 /* User.m */; };
 		A842AE6C1E23F83000C9D317 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A842AE6B1E23F83000C9D317 /* WebKit.framework */; };
+		A842AE6F1E24256B00C9D317 /* RegisterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A842AE6E1E24256B00C9D317 /* RegisterVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,8 @@
 		A842AE671E23F15D00C9D317 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		A842AE681E23F15D00C9D317 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		A842AE6B1E23F83000C9D317 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		A842AE6D1E24256B00C9D317 /* RegisterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterVC.h; sourceTree = "<group>"; };
+		A842AE6E1E24256B00C9D317 /* RegisterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				A842AE651E23F09500C9D317 /* Helpers */,
-				A842AE641E23F07F00C9D317 /* ViewControllers */,
+				A842AE641E23F07F00C9D317 /* ViewController */,
 				A842AE661E23F13200C9D317 /* Model */,
 				A842AE4E1E23EF7900C9D317 /* Main.storyboard */,
 				A842AE541E23EF7900C9D317 /* Assets.xcassets */,
@@ -110,13 +113,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		A842AE641E23F07F00C9D317 /* ViewControllers */ = {
+		A842AE641E23F07F00C9D317 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
 				A842AE4B1E23EF7900C9D317 /* LoginVC.h */,
 				A842AE4C1E23EF7900C9D317 /* LoginVC.m */,
+				A842AE6D1E24256B00C9D317 /* RegisterVC.h */,
+				A842AE6E1E24256B00C9D317 /* RegisterVC.m */,
 			);
-			name = ViewControllers;
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 		A842AE651E23F09500C9D317 /* Helpers */ = {
@@ -273,6 +278,7 @@
 			files = (
 				A842AE631E23EFE200C9D317 /* ServerManager.m in Sources */,
 				A842AE4D1E23EF7900C9D317 /* LoginVC.m in Sources */,
+				A842AE6F1E24256B00C9D317 /* RegisterVC.m in Sources */,
 				A842AE691E23F15D00C9D317 /* User.m in Sources */,
 				A842AE4A1E23EF7900C9D317 /* AppDelegate.m in Sources */,
 				A842AE471E23EF7900C9D317 /* main.m in Sources */,
@@ -403,6 +409,7 @@
 					"$(PROJECT_DIR)/AzureProject",
 				);
 				INFOPLIST_FILE = AzureProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = by.Alex.AzureProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -420,6 +427,7 @@
 					"$(PROJECT_DIR)/AzureProject",
 				);
 				INFOPLIST_FILE = AzureProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = by.Alex.AzureProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";

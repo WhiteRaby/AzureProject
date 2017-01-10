@@ -10,8 +10,22 @@
 
 @implementation User
 
-- (NSString *)description
-{
++ (User*)parseUser:(NSDictionary*)item {
+    
+    User *user = [User new];
+    user.ID = [item objectForKey:@"id"];
+    user.login = [item objectForKey:@"Login"];
+    user.password = [item objectForKey:@"Password"];
+    return user;
+}
+
+- (NSDictionary*)dictionary {
+    
+    return @{@"Login": self.login,
+             @"Password": self.password};
+}
+
+- (NSString *)description{
     return [NSString stringWithFormat:@"%@, %@, %@", self.ID, self.login, self.password];
 }
 
