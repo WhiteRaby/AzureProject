@@ -20,6 +20,13 @@
 		A842AE691E23F15D00C9D317 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = A842AE681E23F15D00C9D317 /* User.m */; };
 		A842AE6C1E23F83000C9D317 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A842AE6B1E23F83000C9D317 /* WebKit.framework */; };
 		A842AE6F1E24256B00C9D317 /* RegisterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A842AE6E1E24256B00C9D317 /* RegisterVC.m */; };
+		A8555FD11E25427800761A43 /* BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A8555FD01E25427800761A43 /* BaseVC.m */; };
+		A8555FD41E25434400761A43 /* SideMenuVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A8555FD31E25434400761A43 /* SideMenuVC.m */; };
+		A8555FDE1E25491000761A43 /* LGSideMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8555FD71E25491000761A43 /* LGSideMenuController.m */; };
+		A8555FDF1E25491000761A43 /* LGSideMenuControllerGesturesHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = A8555FD91E25491000761A43 /* LGSideMenuControllerGesturesHandler.m */; };
+		A8555FE01E25491000761A43 /* LGSideMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = A8555FDB1E25491000761A43 /* LGSideMenuView.m */; };
+		A8555FE11E25491000761A43 /* UIViewController+LGSideMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8555FDD1E25491000761A43 /* UIViewController+LGSideMenuController.m */; };
+		A8555FE41E2556F100761A43 /* BanksVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A8555FE31E2556F100761A43 /* BanksVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +52,20 @@
 		A842AE6B1E23F83000C9D317 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		A842AE6D1E24256B00C9D317 /* RegisterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterVC.h; sourceTree = "<group>"; };
 		A842AE6E1E24256B00C9D317 /* RegisterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterVC.m; sourceTree = "<group>"; };
+		A8555FCF1E25427800761A43 /* BaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseVC.h; sourceTree = "<group>"; };
+		A8555FD01E25427800761A43 /* BaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseVC.m; sourceTree = "<group>"; };
+		A8555FD21E25434400761A43 /* SideMenuVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideMenuVC.h; sourceTree = "<group>"; };
+		A8555FD31E25434400761A43 /* SideMenuVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideMenuVC.m; sourceTree = "<group>"; };
+		A8555FD61E25491000761A43 /* LGSideMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGSideMenuController.h; sourceTree = "<group>"; };
+		A8555FD71E25491000761A43 /* LGSideMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGSideMenuController.m; sourceTree = "<group>"; };
+		A8555FD81E25491000761A43 /* LGSideMenuControllerGesturesHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGSideMenuControllerGesturesHandler.h; sourceTree = "<group>"; };
+		A8555FD91E25491000761A43 /* LGSideMenuControllerGesturesHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGSideMenuControllerGesturesHandler.m; sourceTree = "<group>"; };
+		A8555FDA1E25491000761A43 /* LGSideMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGSideMenuView.h; sourceTree = "<group>"; };
+		A8555FDB1E25491000761A43 /* LGSideMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGSideMenuView.m; sourceTree = "<group>"; };
+		A8555FDC1E25491000761A43 /* UIViewController+LGSideMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LGSideMenuController.h"; sourceTree = "<group>"; };
+		A8555FDD1E25491000761A43 /* UIViewController+LGSideMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LGSideMenuController.m"; sourceTree = "<group>"; };
+		A8555FE21E2556F100761A43 /* BanksVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BanksVC.h; sourceTree = "<group>"; };
+		A8555FE31E2556F100761A43 /* BanksVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BanksVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +96,7 @@
 			children = (
 				A842AE441E23EF7900C9D317 /* AzureProject */,
 				A842AE431E23EF7900C9D317 /* Products */,
+				A8555FD51E25491000761A43 /* LGSideMenuController */,
 				A842AE6A1E23F83000C9D317 /* Frameworks */,
 				7015EEC61D760CA0AE2B39C1 /* Pods */,
 			);
@@ -116,10 +138,16 @@
 		A842AE641E23F07F00C9D317 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				A842AE4B1E23EF7900C9D317 /* LoginVC.h */,
-				A842AE4C1E23EF7900C9D317 /* LoginVC.m */,
 				A842AE6D1E24256B00C9D317 /* RegisterVC.h */,
 				A842AE6E1E24256B00C9D317 /* RegisterVC.m */,
+				A842AE4B1E23EF7900C9D317 /* LoginVC.h */,
+				A842AE4C1E23EF7900C9D317 /* LoginVC.m */,
+				A8555FCF1E25427800761A43 /* BaseVC.h */,
+				A8555FD01E25427800761A43 /* BaseVC.m */,
+				A8555FD21E25434400761A43 /* SideMenuVC.h */,
+				A8555FD31E25434400761A43 /* SideMenuVC.m */,
+				A8555FE21E2556F100761A43 /* BanksVC.h */,
+				A8555FE31E2556F100761A43 /* BanksVC.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -151,6 +179,21 @@
 				4FF0272F5974D744C69EDD7E /* libPods-AzureProject.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A8555FD51E25491000761A43 /* LGSideMenuController */ = {
+			isa = PBXGroup;
+			children = (
+				A8555FD61E25491000761A43 /* LGSideMenuController.h */,
+				A8555FD71E25491000761A43 /* LGSideMenuController.m */,
+				A8555FD81E25491000761A43 /* LGSideMenuControllerGesturesHandler.h */,
+				A8555FD91E25491000761A43 /* LGSideMenuControllerGesturesHandler.m */,
+				A8555FDA1E25491000761A43 /* LGSideMenuView.h */,
+				A8555FDB1E25491000761A43 /* LGSideMenuView.m */,
+				A8555FDC1E25491000761A43 /* UIViewController+LGSideMenuController.h */,
+				A8555FDD1E25491000761A43 /* UIViewController+LGSideMenuController.m */,
+			);
+			path = LGSideMenuController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,13 +319,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8555FE41E2556F100761A43 /* BanksVC.m in Sources */,
 				A842AE631E23EFE200C9D317 /* ServerManager.m in Sources */,
 				A842AE4D1E23EF7900C9D317 /* LoginVC.m in Sources */,
+				A8555FDF1E25491000761A43 /* LGSideMenuControllerGesturesHandler.m in Sources */,
+				A8555FD41E25434400761A43 /* SideMenuVC.m in Sources */,
+				A8555FD11E25427800761A43 /* BaseVC.m in Sources */,
 				A842AE6F1E24256B00C9D317 /* RegisterVC.m in Sources */,
 				A842AE691E23F15D00C9D317 /* User.m in Sources */,
+				A8555FDE1E25491000761A43 /* LGSideMenuController.m in Sources */,
 				A842AE4A1E23EF7900C9D317 /* AppDelegate.m in Sources */,
+				A8555FE11E25491000761A43 /* UIViewController+LGSideMenuController.m in Sources */,
 				A842AE471E23EF7900C9D317 /* main.m in Sources */,
 				A842AE531E23EF7900C9D317 /* AzureProject.xcdatamodeld in Sources */,
+				A8555FE01E25491000761A43 /* LGSideMenuView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

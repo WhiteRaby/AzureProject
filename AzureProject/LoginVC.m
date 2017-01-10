@@ -11,6 +11,8 @@
 #import "User.h"
 #import <MBProgressHUD.h>
 #import "RegisterVC.h"
+#import "BaseVC.h"
+#import "SideMenuVC.h"
 
 @interface LoginVC () <UITextFieldDelegate>
 
@@ -85,7 +87,9 @@
         
         if (success) {
             [self saveLoginAndPassword];
-            [self performSegueWithIdentifier:@"SignIn" sender:self];
+            [self moveOn];
+            //[self presentViewController:[BaseVC new] animated:YES completion:nil];
+           // [self performSegueWithIdentifier:@"SignIn" sender:self];
         } else {
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                 [self showSignInError];
@@ -93,6 +97,19 @@
         }
     }];
 }
+
+- (void)moveOn {
+
+    BaseVC *baseVC = [BaseVC new];
+    [baseVC setupVC];
+    
+    UIWindow *window = UIApplication.sharedApplication.delegate.window;
+    window.rootViewController = baseVC;
+    [UIView transitionWithView:window
+                      duration:0.3
+                       options:UIViewAnimationOptionTransitionCrossDissolve
+                    animations:nil
+                    completion:nil];}
 
 #pragma mark - UITextFieldDelegate
 

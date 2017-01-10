@@ -7,78 +7,53 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		536F7D0550F5FD9F5869CEC995CFEE9B /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 903AE5745FD4D8E64E0D89F7EA0B8880 /* MBProgressHUD.m */; };
-		53742CFB3EA687D8C0BC5168A6A0A6F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82D40E632FA2A47E7DBA77D3D46FDFE8 /* Foundation.framework */; };
-		5DA723352CFC1B716EEB570B1B80EFB3 /* LGSideMenuController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C46409715CA17EDA9490BE25C5E2931 /* LGSideMenuController-dummy.m */; };
-		7F080D388CD05D07247F25E4202FEBB4 /* LGSideMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28100A7A31FD11C6F2EF369A95D5504C /* LGSideMenuController.m */; };
+		536F7D0550F5FD9F5869CEC995CFEE9B /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 30858F8F84BD7A73D99478028C4C0E9A /* MBProgressHUD.m */; };
 		8C9B1DC3568E2881FF159096A119F748 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5B476C7C3BDD4218E3B0B852CE57093 /* CoreGraphics.framework */; };
-		9FD160F35235162CBB864F6D6EEEC55F /* Pods-AzureProject-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 18437DBAA38344E29001EC4FCDA54578 /* Pods-AzureProject-dummy.m */; };
-		ACDABEA4E041A3317123320C2D5ECA45 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82D40E632FA2A47E7DBA77D3D46FDFE8 /* Foundation.framework */; };
-		BB88D35B819AF6C79B46D74440CFC155 /* LGSideMenuController.h in Headers */ = {isa = PBXBuildFile; fileRef = BDE862604B4ED1525E52EB51CAD99809 /* LGSideMenuController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		94BD781E4ADFA5E28F0888AAA3A288AA /* Pods-AzureProject-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 18437DBAA38344E29001EC4FCDA54578 /* Pods-AzureProject-dummy.m */; };
 		CA5E682B018BF5756152E04FE2F23909 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82D40E632FA2A47E7DBA77D3D46FDFE8 /* Foundation.framework */; };
 		D415D0767A8AF457434FFFB5957D4616 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E054739AD8EE5381E7FBABB3ACA80805 /* QuartzCore.framework */; };
-		E5229F5125ACD420659E7B2D19BB30A8 /* MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 101BEDEA0E53927C4577C8D6DB74ABA7 /* MBProgressHUD-dummy.m */; };
-		EA321C98029015AA4895C0B26891D8F8 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = E5543C039C3E3E420B59F4B6AD63E62D /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E5229F5125ACD420659E7B2D19BB30A8 /* MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9895137673E5059F732A42A1E2A66E0B /* MBProgressHUD-dummy.m */; };
+		EA321C98029015AA4895C0B26891D8F8 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E67CBBACD85CE50C19C6320AAD17088 /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF639D52361E60436C101F43F1AC9A7D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82D40E632FA2A47E7DBA77D3D46FDFE8 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3CC6AFC36105198175BE0D5CDE24144A /* PBXContainerItemProxy */ = {
+		A45CBB9D4BCDFF91A47A3D67887CDAE3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 586F2DFA9BDCC6675C2546793A69E5CC;
 			remoteInfo = MBProgressHUD;
 		};
-		76F608952FFA6125E6FE22295D227526 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F1022135014AC3B84F17A4F91E01916A;
-			remoteInfo = LGSideMenuController;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0BEF63CB39F8A98CDF8B83EB4B5EBD5A /* libPods-AzureProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-AzureProject.a"; path = "libPods-AzureProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		101BEDEA0E53927C4577C8D6DB74ABA7 /* MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
 		18437DBAA38344E29001EC4FCDA54578 /* Pods-AzureProject-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AzureProject-dummy.m"; sourceTree = "<group>"; };
+		1E67CBBACD85CE50C19C6320AAD17088 /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		1E719D93D1AD3362C1777FAB57CD5A78 /* Pods-AzureProject-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AzureProject-resources.sh"; sourceTree = "<group>"; };
-		28100A7A31FD11C6F2EF369A95D5504C /* LGSideMenuController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LGSideMenuController.m; path = LGSideMenuController/LGSideMenuController.m; sourceTree = "<group>"; };
+		30858F8F84BD7A73D99478028C4C0E9A /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		3B4BF97130C4D0B0496AFE6CD663ED01 /* Pods-AzureProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AzureProject.debug.xcconfig"; sourceTree = "<group>"; };
 		481EEFFF97A7E8D417F23F0CE4B9FAD9 /* Pods-AzureProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AzureProject.release.xcconfig"; sourceTree = "<group>"; };
 		4B2A6979D45C66F78F855B55CFDD9AD0 /* Pods-AzureProject-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AzureProject-frameworks.sh"; sourceTree = "<group>"; };
-		595888CBA442DDAC8B1B1EBC374BABE2 /* MBProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.xcconfig; sourceTree = "<group>"; };
-		66FC973360984ECC30E4A406458E1C44 /* libLGSideMenuController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libLGSideMenuController.a; path = libLGSideMenuController.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DEDFE644B61E82708548023AF3A8DF7 /* libMBProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMBProgressHUD.a; path = libMBProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A746722B7CFD1A5B0A14A7DB312F9E2 /* libPods-AzureProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-AzureProject.a"; path = "libPods-AzureProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79D7B80F1930258EE19273F79E338BE7 /* Pods-AzureProject-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AzureProject-acknowledgements.markdown"; sourceTree = "<group>"; };
-		7C46409715CA17EDA9490BE25C5E2931 /* LGSideMenuController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LGSideMenuController-dummy.m"; sourceTree = "<group>"; };
+		80DB6C08B9B312D2B623E23F6515C0A5 /* MBProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.xcconfig; sourceTree = "<group>"; };
 		82D40E632FA2A47E7DBA77D3D46FDFE8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		82F2FD70D9C116A3BFB4EE568A366EB7 /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
-		84AF5C27597738532EDAE4515F36B5FA /* LGSideMenuController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LGSideMenuController.xcconfig; sourceTree = "<group>"; };
-		903AE5745FD4D8E64E0D89F7EA0B8880 /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
-		909C269049134754DE461C65A9B3669F /* libMBProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMBProgressHUD.a; path = libMBProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9895137673E5059F732A42A1E2A66E0B /* MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
 		A61D4E60A9D44B237DE1FD97B8930DDC /* Pods-AzureProject-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AzureProject-acknowledgements.plist"; sourceTree = "<group>"; };
-		BDE862604B4ED1525E52EB51CAD99809 /* LGSideMenuController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LGSideMenuController.h; path = LGSideMenuController/LGSideMenuController.h; sourceTree = "<group>"; };
+		AABE45081325970398177350B3365B5A /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
 		E054739AD8EE5381E7FBABB3ACA80805 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		E5543C039C3E3E420B59F4B6AD63E62D /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		E5B476C7C3BDD4218E3B0B852CE57093 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		E902C4CBADCDC01CFF40A14F15B4352D /* LGSideMenuController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LGSideMenuController-prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2F84EE126AF8DDBFC554E2CAB5C0075E /* Frameworks */ = {
+		4E1031D13C03EF635C83772255F284D7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53742CFB3EA687D8C0BC5168A6A0A6F2 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ED67931FD114EF7744ED90C87ED0CAB4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ACDABEA4E041A3317123320C2D5ECA45 /* Foundation.framework in Frameworks */,
+				EF639D52361E60436C101F43F1AC9A7D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +85,17 @@
 			path = "Target Support Files/Pods-AzureProject";
 			sourceTree = "<group>";
 		};
+		077EB30DB6AD0F301EC92B8EAEA22722 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				1E67CBBACD85CE50C19C6320AAD17088 /* MBProgressHUD.h */,
+				30858F8F84BD7A73D99478028C4C0E9A /* MBProgressHUD.m */,
+				2848C0E8056CB6EE547CD6E0C1780766 /* Support Files */,
+			);
+			name = MBProgressHUD;
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
 		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,14 +112,23 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		3A4F8322F2074A35F80F39A164111D04 /* Products */ = {
+		2848C0E8056CB6EE547CD6E0C1780766 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				66FC973360984ECC30E4A406458E1C44 /* libLGSideMenuController.a */,
-				909C269049134754DE461C65A9B3669F /* libMBProgressHUD.a */,
-				0BEF63CB39F8A98CDF8B83EB4B5EBD5A /* libPods-AzureProject.a */,
+				80DB6C08B9B312D2B623E23F6515C0A5 /* MBProgressHUD.xcconfig */,
+				9895137673E5059F732A42A1E2A66E0B /* MBProgressHUD-dummy.m */,
+				AABE45081325970398177350B3365B5A /* MBProgressHUD-prefix.pch */,
 			);
-			name = Products;
+			name = "Support Files";
+			path = "../Target Support Files/MBProgressHUD";
+			sourceTree = "<group>";
+		};
+		5836A44A75C427EBF4739C55E2315758 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				077EB30DB6AD0F301EC92B8EAEA22722 /* MBProgressHUD */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -141,52 +136,10 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
-				A11C1FF02A913B745A4A58E8D06B1A28 /* Pods */,
-				3A4F8322F2074A35F80F39A164111D04 /* Products */,
+				5836A44A75C427EBF4739C55E2315758 /* Pods */,
+				FE82CADED51D8683FD427307D02DB681 /* Products */,
 				15393015A6FFE58FDA681EFBD935F3AF /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		A11C1FF02A913B745A4A58E8D06B1A28 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				DB913DB75F76E68E6EE7F300691031DE /* LGSideMenuController */,
-				F7E07C5E1664560C907B0811344FEAB6 /* MBProgressHUD */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		A35EA17329BBB6C3288196DC40A8E912 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				595888CBA442DDAC8B1B1EBC374BABE2 /* MBProgressHUD.xcconfig */,
-				101BEDEA0E53927C4577C8D6DB74ABA7 /* MBProgressHUD-dummy.m */,
-				82F2FD70D9C116A3BFB4EE568A366EB7 /* MBProgressHUD-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/MBProgressHUD";
-			sourceTree = "<group>";
-		};
-		B4D99D9360C0A50EA2CD168046664C66 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				84AF5C27597738532EDAE4515F36B5FA /* LGSideMenuController.xcconfig */,
-				7C46409715CA17EDA9490BE25C5E2931 /* LGSideMenuController-dummy.m */,
-				E902C4CBADCDC01CFF40A14F15B4352D /* LGSideMenuController-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/LGSideMenuController";
-			sourceTree = "<group>";
-		};
-		DB913DB75F76E68E6EE7F300691031DE /* LGSideMenuController */ = {
-			isa = PBXGroup;
-			children = (
-				BDE862604B4ED1525E52EB51CAD99809 /* LGSideMenuController.h */,
-				28100A7A31FD11C6F2EF369A95D5504C /* LGSideMenuController.m */,
-				B4D99D9360C0A50EA2CD168046664C66 /* Support Files */,
-			);
-			name = LGSideMenuController;
-			path = LGSideMenuController;
 			sourceTree = "<group>";
 		};
 		E029D9AAED7679617632303F2A4C409B /* iOS */ = {
@@ -199,15 +152,13 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		F7E07C5E1664560C907B0811344FEAB6 /* MBProgressHUD */ = {
+		FE82CADED51D8683FD427307D02DB681 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E5543C039C3E3E420B59F4B6AD63E62D /* MBProgressHUD.h */,
-				903AE5745FD4D8E64E0D89F7EA0B8880 /* MBProgressHUD.m */,
-				A35EA17329BBB6C3288196DC40A8E912 /* Support Files */,
+				4DEDFE644B61E82708548023AF3A8DF7 /* libMBProgressHUD.a */,
+				6A746722B7CFD1A5B0A14A7DB312F9E2 /* libPods-AzureProject.a */,
 			);
-			name = MBProgressHUD;
-			path = MBProgressHUD;
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,17 +172,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E9EC1CE65F081D9C3E2FF0CDC3D0A75F /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BB88D35B819AF6C79B46D74440CFC155 /* LGSideMenuController.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		1EDC19F5425B725B66A84C7B78B995F4 /* Pods-AzureProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBAA1D27F21C639A64B4523572AB2A7C /* Build configuration list for PBXNativeTarget "Pods-AzureProject" */;
+			buildPhases = (
+				02F4C528AF24231CC8EF2BB7BE70ADBF /* Sources */,
+				4E1031D13C03EF635C83772255F284D7 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7E96AD4487697AE1D746722E93BEF79C /* PBXTargetDependency */,
+			);
+			name = "Pods-AzureProject";
+			productName = "Pods-AzureProject";
+			productReference = 6A746722B7CFD1A5B0A14A7DB312F9E2 /* libPods-AzureProject.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		586F2DFA9BDCC6675C2546793A69E5CC /* MBProgressHUD */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6B44251FA50022CA55D4B2FBE1468C76 /* Build configuration list for PBXNativeTarget "MBProgressHUD" */;
@@ -246,42 +206,7 @@
 			);
 			name = MBProgressHUD;
 			productName = MBProgressHUD;
-			productReference = 909C269049134754DE461C65A9B3669F /* libMBProgressHUD.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		D35C0026520E31ADC3DD65E175AB48C9 /* Pods-AzureProject */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 29289C044DF26C8C85E13A223E013085 /* Build configuration list for PBXNativeTarget "Pods-AzureProject" */;
-			buildPhases = (
-				819630EE3D9F356D34D476E8F4594720 /* Sources */,
-				ED67931FD114EF7744ED90C87ED0CAB4 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				087392C1DF43814281A88E81A7FDB017 /* PBXTargetDependency */,
-				8FC0C1421685FB7404D540495F26BF0D /* PBXTargetDependency */,
-			);
-			name = "Pods-AzureProject";
-			productName = "Pods-AzureProject";
-			productReference = 0BEF63CB39F8A98CDF8B83EB4B5EBD5A /* libPods-AzureProject.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		F1022135014AC3B84F17A4F91E01916A /* LGSideMenuController */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 20027A76F9206B526AEFBE75CF515042 /* Build configuration list for PBXNativeTarget "LGSideMenuController" */;
-			buildPhases = (
-				87590EEDDD3CB842594D1AEB0E7BBC04 /* Sources */,
-				2F84EE126AF8DDBFC554E2CAB5C0075E /* Frameworks */,
-				E9EC1CE65F081D9C3E2FF0CDC3D0A75F /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = LGSideMenuController;
-			productName = LGSideMenuController;
-			productReference = 66FC973360984ECC30E4A406458E1C44 /* libLGSideMenuController.a */;
+			productReference = 4DEDFE644B61E82708548023AF3A8DF7 /* libMBProgressHUD.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -301,18 +226,25 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 3A4F8322F2074A35F80F39A164111D04 /* Products */;
+			productRefGroup = FE82CADED51D8683FD427307D02DB681 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F1022135014AC3B84F17A4F91E01916A /* LGSideMenuController */,
 				586F2DFA9BDCC6675C2546793A69E5CC /* MBProgressHUD */,
-				D35C0026520E31ADC3DD65E175AB48C9 /* Pods-AzureProject */,
+				1EDC19F5425B725B66A84C7B78B995F4 /* Pods-AzureProject */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		02F4C528AF24231CC8EF2BB7BE70ADBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94BD781E4ADFA5E28F0888AAA3A288AA /* Pods-AzureProject-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7E4305B404C5BA5156646C69578ADD62 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -322,67 +254,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		819630EE3D9F356D34D476E8F4594720 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9FD160F35235162CBB864F6D6EEEC55F /* Pods-AzureProject-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		87590EEDDD3CB842594D1AEB0E7BBC04 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5DA723352CFC1B716EEB570B1B80EFB3 /* LGSideMenuController-dummy.m in Sources */,
-				7F080D388CD05D07247F25E4202FEBB4 /* LGSideMenuController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		087392C1DF43814281A88E81A7FDB017 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = LGSideMenuController;
-			target = F1022135014AC3B84F17A4F91E01916A /* LGSideMenuController */;
-			targetProxy = 76F608952FFA6125E6FE22295D227526 /* PBXContainerItemProxy */;
-		};
-		8FC0C1421685FB7404D540495F26BF0D /* PBXTargetDependency */ = {
+		7E96AD4487697AE1D746722E93BEF79C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MBProgressHUD;
 			target = 586F2DFA9BDCC6675C2546793A69E5CC /* MBProgressHUD */;
-			targetProxy = 3CC6AFC36105198175BE0D5CDE24144A /* PBXContainerItemProxy */;
+			targetProxy = A45CBB9D4BCDFF91A47A3D67887CDAE3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		01A595F0FC1C28EB2F412C342428ABDE /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 84AF5C27597738532EDAE4515F36B5FA /* LGSideMenuController.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/LGSideMenuController/LGSideMenuController-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
 		2D6505E4F84AB187E42E7D1F17C02FC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 595888CBA442DDAC8B1B1EBC374BABE2 /* MBProgressHUD.xcconfig */;
+			baseConfigurationReference = 80DB6C08B9B312D2B623E23F6515C0A5 /* MBProgressHUD.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -402,29 +288,6 @@
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
-		};
-		33DB511D74FC93F8FC2527BB339DDE60 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 481EEFFF97A7E8D417F23F0CE4B9FAD9 /* Pods-AzureProject.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
 		};
 		59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -470,53 +333,7 @@
 			};
 			name = Debug;
 		};
-		7CE27011CDF32D8605831CD661A1A93B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 84AF5C27597738532EDAE4515F36B5FA /* LGSideMenuController.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/LGSideMenuController/LGSideMenuController-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		81D27BBFE39221A11085CC94C71E9978 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 595888CBA442DDAC8B1B1EBC374BABE2 /* MBProgressHUD.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		9C06542078CB0754445E483FE825C7F4 /* Debug */ = {
+		727F43CA92357CAC35E266D4A55AAE78 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3B4BF97130C4D0B0496AFE6CD663ED01 /* Pods-AzureProject.debug.xcconfig */;
 			buildSettings = {
@@ -538,6 +355,52 @@
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
+		};
+		81D27BBFE39221A11085CC94C71E9978 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80DB6C08B9B312D2B623E23F6515C0A5 /* MBProgressHUD.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A13A90B3A4252C7BEC81E0ED9CBD5FF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 481EEFFF97A7E8D417F23F0CE4B9FAD9 /* Pods-AzureProject.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
 		};
 		B7324857C38B065FEB1EEE3105C2367A /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -582,24 +445,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		20027A76F9206B526AEFBE75CF515042 /* Build configuration list for PBXNativeTarget "LGSideMenuController" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7CE27011CDF32D8605831CD661A1A93B /* Debug */,
-				01A595F0FC1C28EB2F412C342428ABDE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		29289C044DF26C8C85E13A223E013085 /* Build configuration list for PBXNativeTarget "Pods-AzureProject" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9C06542078CB0754445E483FE825C7F4 /* Debug */,
-				33DB511D74FC93F8FC2527BB339DDE60 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -614,6 +459,15 @@
 			buildConfigurations = (
 				2D6505E4F84AB187E42E7D1F17C02FC3 /* Debug */,
 				81D27BBFE39221A11085CC94C71E9978 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBAA1D27F21C639A64B4523572AB2A7C /* Build configuration list for PBXNativeTarget "Pods-AzureProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				727F43CA92357CAC35E266D4A55AAE78 /* Debug */,
+				A13A90B3A4252C7BEC81E0ED9CBD5FF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
