@@ -13,6 +13,7 @@
 #import "RegisterVC.h"
 #import "BaseVC.h"
 #import "SideMenuVC.h"
+#import "OffersVC.h"
 
 @interface LoginVC () <UITextFieldDelegate>
 
@@ -22,8 +23,6 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *titleConstraint;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *loginConstraint;
 
-@property (strong, nonatomic) NSArray *users;
-
 @end
 
 @implementation LoginVC
@@ -31,7 +30,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self loadUsers];
     [self initUI];
 }
 
@@ -41,20 +39,6 @@
     self.loginTextField.text = [userDefaults objectForKey:@"login"];
     self.passwordTextField.text = [userDefaults objectForKey:@"password"];
     self.stayOnlineSwitch.on = [userDefaults boolForKey:@"logged in"];
-}
-
-- (void)loadUsers {
-    self.users = nil;
-    
-    [[ServerManager sharedInstance] getUsersWithCompletion:^(BOOL success, id result) {
-        if (success) {
-            
-            self.users = (NSArray*)result;
-            for (User *user in self.users) {
-                NSLog(@"%@ %@", user.login, user.password);
-            }
-        }
-    }];
 }
 
 - (void)saveLoginAndPassword {
@@ -87,9 +71,7 @@
         
         if (success) {
             [self saveLoginAndPassword];
-            [self moveOn];
-            //[self presentViewController:[BaseVC new] animated:YES completion:nil];
-           // [self performSegueWithIdentifier:@"SignIn" sender:self];
+            [self presentViewController:[BaseVC new] animated:YES completion:nil];
         } else {
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                 [self showSignInError];
@@ -97,19 +79,6 @@
         }
     }];
 }
-
-- (void)moveOn {
-
-    BaseVC *baseVC = [BaseVC new];
-    [baseVC setupVC];
-    
-    UIWindow *window = UIApplication.sharedApplication.delegate.window;
-    window.rootViewController = baseVC;
-    [UIView transitionWithView:window
-                      duration:0.3
-                       options:UIViewAnimationOptionTransitionCrossDissolve
-                    animations:nil
-                    completion:nil];}
 
 #pragma mark - UITextFieldDelegate
 

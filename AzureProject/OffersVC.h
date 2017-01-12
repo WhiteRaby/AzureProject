@@ -1,5 +1,5 @@
 //
-//  BanksVC.h
+//  AcauntsVC.h
 //  AzureProject
 //
 //  Created by Alexandr on 10.01.17.
@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "MenuActionDelegate.h"
 
-@interface BanksVC : UIViewController
+@interface OffersVC : UIViewController
 @property (weak, nonatomic) id<MenuActionDelegate> delegate;
 
 @end

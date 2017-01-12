@@ -18,5 +18,8 @@ typedef void (^CompletionBlock) (BOOL success, id result);
 - (void)getUsersWithCompletion:(CompletionBlock)completion;
 - (void)getUserWithLogin:(NSString*)login andPassword:(NSString*)password completion:(CompletionBlock)completion;
 - (void)saveUser:(User*)user completion:(CompletionBlock)completion;
+- (void)getBanksCompletion:(CompletionBlock)completion;
+- (void)getBankWithID:(NSString*)ID Completion:(CompletionBlock)completion;
+- (void)getOffersCompletion:(CompletionBlock)completion;
 
 @end

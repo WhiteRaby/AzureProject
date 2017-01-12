@@ -10,11 +10,15 @@
 #import <MicrosoftAzureMobile/MicrosoftAzureMobile.h>
 #import "AppDelegate.h"
 #import "User.h"
+#import "Bank.h"
+#import "Offer.h"
 
 @interface ServerManager ()
 
 @property (nonatomic, strong) MSClient *client;
-@property (nonatomic, strong) MSTable *userTable;
+@property (nonatomic, strong) MSTable *usersTable;
+@property (nonatomic, strong) MSTable *banksTable;
+@property (nonatomic, strong) MSTable *offersTable;
 
 @end
 
@@ -39,15 +43,17 @@
         
         self.client = [(AppDelegate *) [[UIApplication sharedApplication] delegate] client];
 
-        self.userTable = [self.client tableWithName:@"User"];
-        
+        self.usersTable = [self.client tableWithName:@"User"];
+        self.banksTable = [self.client tableWithName:@"Bank"];
+        self.offersTable = [self.client tableWithName:@"BankOffer"];
+
     }
     return self;
 }
 
 - (void)getUsersWithCompletion:(CompletionBlock)completion {
     
-    [self.userTable readWithCompletion:^(MSQueryResult *result, NSError *error) {
+    [self.usersTable readWithCompletion:^(MSQueryResult *result, NSError *error) {
         if(error) { // error is nil if no error occured
             if (completion) {
                 completion(NO, error);
@@ -69,7 +75,7 @@
     // Create a predicate that finds items where complete is false
     NSPredicate * predicate = [NSPredicate predicateWithFormat:@"Login == %@ AND Password == %@", login, password];
     // Query the TodoItem table
-    [self.userTable readWithPredicate:predicate completion:^(MSQueryResult *result, NSError *error) {
+    [self.usersTable readWithPredicate:predicate completion:^(MSQueryResult *result, NSError *error) {
         if (error) {
             if (completion) {
                 completion(NO, error);
@@ -92,7 +98,7 @@
 
 - (void)saveUser:(User*)user completion:(CompletionBlock)completion {
     
-    [self.userTable insert:[user dictionary] completion:^(NSDictionary *result, NSError *error) {
+    [self.usersTable insert:[user dictionary] completion:^(NSDictionary *result, NSError *error) {
         if(error) {
             if (completion) {
                 completion(NO, error);
@@ -105,5 +111,66 @@
     }];
 }
 
+- (void)getBanksCompletion:(CompletionBlock)completion {
+    
+    [self.banksTable readWithCompletion:^(MSQueryResult *result, NSError *error) {
+        if(error) { // error is nil if no error occured
+            if (completion) {
+                completion(NO, error);
+            }
+        } else {
+            NSMutableArray *bunks = [NSMutableArray array];
+            for(NSDictionary *item in result.items) { // items is NSArray of records that match query
+                [bunks addObject:[Bank parseBank:item]];
+            }
+            if (completion) {
+                completion(YES, [bunks copy]);
+            }
+        }
+    }];
+}
+
+- (void)getBankWithID:(NSString*)ID Completion:(CompletionBlock)completion {
+    
+    NSPredicate * predicate = [NSPredicate predicateWithFormat:@"id == %@", ID];
+    [self.banksTable readWithPredicate:predicate completion:^(MSQueryResult *result, NSError *error) {
+        if (error) {
+            if (completion) {
+                completion(NO, error);
+            }
+        } else {
+            
+            if ([result.items count] > 0) {
+                Bank *bank = [Bank parseBank:[result.items firstObject]];
+                if (completion) {
+                    completion(YES, bank);
+                }
+            } else {
+                if (completion) {
+                    completion(NO, result.items);
+                }
+            }
+        }
+    }];
+}
+
+- (void)getOffersCompletion:(CompletionBlock)completion {
+    
+    [self.offersTable readWithCompletion:^(MSQueryResult *result, NSError *error) {
+        if(error) { // error is nil if no error occured
+            if (completion) {
+                completion(NO, error);
+            }
+        } else {
+            NSMutableArray *offers = [NSMutableArray array];
+            for(NSDictionary *item in result.items) { // items is NSArray of records that match query
+                [offers addObject:[Offer parseOffer:item]];
+            }
+            if (completion) {
+                completion(YES, [offers copy]);
+            }
+        }
+    }];
+}
 
 @end

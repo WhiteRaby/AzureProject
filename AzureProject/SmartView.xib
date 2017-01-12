@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11542"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SmartView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XXO-nc-W8U">
+                    <rect key="frame" x="272" y="0.0" width="103" height="667"/>
+                    <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gtY-lW-V8d">
+                    <rect key="frame" x="136" y="0.0" width="128" height="667"/>
+                    <color key="backgroundColor" red="0.57817560130000001" green="0.86592529770000004" blue="0.46225464049999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PQS-Yr-Hex">
+                    <rect key="frame" x="0.0" y="0.0" width="128" height="667"/>
+                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="PQS-Yr-Hex" secondAttribute="trailing" constant="247" id="02i-hQ-UlH"/>
+                <constraint firstItem="PQS-Yr-Hex" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="FsR-NZ-rnV"/>
+                <constraint firstAttribute="trailing" secondItem="XXO-nc-W8U" secondAttribute="trailing" id="KYE-50-Slr"/>
+                <constraint firstAttribute="trailing" secondItem="gtY-lW-V8d" secondAttribute="trailing" constant="111" id="Mbw-ba-no8"/>
+                <constraint firstItem="XXO-nc-W8U" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="272" id="T7n-s8-qaS"/>
+                <constraint firstAttribute="bottom" secondItem="PQS-Yr-Hex" secondAttribute="bottom" id="VYT-U9-zZR"/>
+                <constraint firstItem="gtY-lW-V8d" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Wlh-q0-3py"/>
+                <constraint firstItem="XXO-nc-W8U" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="X6B-pR-l2m"/>
+                <constraint firstAttribute="bottom" secondItem="gtY-lW-V8d" secondAttribute="bottom" id="e76-2Q-XBd"/>
+                <constraint firstAttribute="bottom" secondItem="XXO-nc-W8U" secondAttribute="bottom" id="lbl-s4-Kb8"/>
+                <constraint firstItem="PQS-Yr-Hex" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="nFx-7t-AJE"/>
+                <constraint firstItem="gtY-lW-V8d" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="136" id="omX-W9-HH8"/>
+            </constraints>
+            <connections>
+                <outlet property="blueLeadingConstraint" destination="FsR-NZ-rnV" id="5jl-kJ-sXH"/>
+                <outlet property="blueTrailingConstraint" destination="02i-hQ-UlH" id="H8k-2v-L0K"/>
+                <outlet property="blueView" destination="PQS-Yr-Hex" id="zxg-ny-wAf"/>
+                <outlet property="greenLeadingConstraint" destination="omX-W9-HH8" id="uhh-98-aMN"/>
+                <outlet property="greenTrailingConstraint" destination="Mbw-ba-no8" id="5BU-oR-gEQ"/>
+                <outlet property="greenView" destination="gtY-lW-V8d" id="aoP-XQ-qGQ"/>
+                <outlet property="yellowLeadingConstraint" destination="T7n-s8-qaS" id="bcA-Zr-atu"/>
+                <outlet property="yellowTrailingConstraint" destination="KYE-50-Slr" id="bE2-GF-9o3"/>
+                <outlet property="yellowView" destination="XXO-nc-W8U" id="G8e-jU-McX"/>
+            </connections>
+            <point key="canvasLocation" x="30.5" y="-554.5"/>
+        </view>
+    </objects>
+</document>

@@ -9,6 +9,7 @@
 #import "LGSideMenuController.h"
 #import "UIViewController+LGSideMenuController.h"
 
+
+
 @interface BaseVC  : LGSideMenuController
-- (void)setupVC;
 @end

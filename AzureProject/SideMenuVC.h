@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol SideMenuDelegate <NSObject>
+
+- (void)didSelectRow:(NSInteger)row;
+
+@end
+
+
 @interface SideMenuVC : UITableViewController
+
+@property (weak, nonatomic) id<SideMenuDelegate> delegate;
 
 @end
