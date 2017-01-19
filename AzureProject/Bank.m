@@ -21,4 +21,13 @@
     return bank;
 }
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.offers = [NSMutableArray array];
+    }
+    return self;
+}
+
 @end

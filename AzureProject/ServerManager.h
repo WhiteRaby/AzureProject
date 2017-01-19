@@ -8,11 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
-@class User;
+@class User, Account;
 
 typedef void (^CompletionBlock) (BOOL success, id result);
 
 @interface ServerManager : NSObject
+
+@property (strong, nonatomic) User *user;
 
 + (ServerManager*)sharedInstance;
 - (void)getUsersWithCompletion:(CompletionBlock)completion;
@@ -21,5 +23,8 @@ typedef void (^CompletionBlock) (BOOL success, id result);
 - (void)getBanksCompletion:(CompletionBlock)completion;
 - (void)getBankWithID:(NSString*)ID Completion:(CompletionBlock)completion;
 - (void)getOffersCompletion:(CompletionBlock)completion;
+- (void)getAccountsWithUserLogin:(NSString*)login completion:(CompletionBlock)completion;
+- (void)getOffersWithID:(NSString*)ID Completion:(CompletionBlock)completion;
+- (void)saveAccount:(Account*)account completion:(CompletionBlock)completion;
 
 @end

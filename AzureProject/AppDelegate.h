@@ -10,7 +10,6 @@
 #import <CoreData/CoreData.h>
 #import <MicrosoftAzureMobile/MicrosoftAzureMobile.h>
 
-
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;

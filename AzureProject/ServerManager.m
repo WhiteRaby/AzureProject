@@ -12,6 +12,7 @@
 #import "User.h"
 #import "Bank.h"
 #import "Offer.h"
+#import "Account.h"
 
 @interface ServerManager ()
 
@@ -19,6 +20,7 @@
 @property (nonatomic, strong) MSTable *usersTable;
 @property (nonatomic, strong) MSTable *banksTable;
 @property (nonatomic, strong) MSTable *offersTable;
+@property (nonatomic, strong) MSTable *accountTable;
 
 @end
 
@@ -46,6 +48,7 @@
         self.usersTable = [self.client tableWithName:@"User"];
         self.banksTable = [self.client tableWithName:@"Bank"];
         self.offersTable = [self.client tableWithName:@"BankOffer"];
+        self.accountTable = [self.client tableWithName:@"Account"];
 
     }
     return self;
@@ -168,6 +171,73 @@
             }
             if (completion) {
                 completion(YES, [offers copy]);
+            }
+        }
+    }];
+}
+
+- (void)getOffersWithID:(NSString*)ID Completion:(CompletionBlock)completion {
+    
+    NSPredicate * predicate = [NSPredicate predicateWithFormat:@"id == %@", ID];
+    [self.offersTable readWithPredicate:predicate completion:^(MSQueryResult *result, NSError *error) {
+        if (error) {
+            if (completion) {
+                completion(NO, error);
+            }
+        } else {
+            
+            if ([result.items count] > 0) {
+                Offer *offer = [Offer parseOffer:[result.items firstObject]];
+                if (completion) {
+                    completion(YES, offer);
+                }
+            } else {
+                if (completion) {
+                    completion(NO, result.items);
+                }
+            }
+        }
+    }];
+}
+
+- (void)getAccountsWithUserLogin:(NSString*)login completion:(CompletionBlock)completion {
+    
+    NSPredicate * predicate = [NSPredicate predicateWithFormat:@"LoginRefRecId == %@", login];
+    [self.accountTable readWithPredicate:predicate completion:^(MSQueryResult *result, NSError *error) {
+        if (error) {
+            if (completion) {
+                completion(NO, error);
+            }
+        } else {
+            if ([result.items count] > 0) {
+                
+                NSMutableArray *accounts = [NSMutableArray array];
+                for (NSDictionary *item in result.items) {
+                    Account *account = [Account parseAccount:item];
+                    [accounts addObject:account];
+                }
+                if (completion) {
+                    completion(YES, [accounts copy]);
+                }
+            } else {
+                if (completion) {
+                    completion(NO, result.items);
+                }
+            }
+        }
+    }];
+}
+
+- (void)saveAccount:(Account*)account completion:(CompletionBlock)completion {
+    
+    [self.accountTable insert:[account dictionary] completion:^(NSDictionary *result, NSError *error) {
+        if(error) {
+            if (completion) {
+                completion(NO, error);
+            }
+        } else {
+            if (completion) {
+                completion(YES, result);
             }
         }
     }];

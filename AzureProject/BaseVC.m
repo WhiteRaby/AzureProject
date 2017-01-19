@@ -14,6 +14,8 @@
 #import "OffersVC.h"
 #import "QuickCalcVC.h"
 #import "MenuActionDelegate.h"
+#import "CreateDepositVC.h"
+#import "MyDepositsVC.h"
 
 @interface BaseVC () <UIGestureRecognizerDelegate, MenuActionDelegate, SideMenuDelegate>
 
@@ -45,7 +47,7 @@
         
         self.leftViewController = leftVC;
         
-        [self showOffersVC];
+        [self showMyDepositsVC];
     }
     return self;
 }
@@ -74,6 +76,23 @@
     [self setRootViewController:[self navigationControllerWithRootViewConntroller:quickCalcVC]];
 }
 
+- (void)showCreateDepositVC {
+    
+    CreateDepositVC *createDepositVC = [self.mainStoryboard instantiateViewControllerWithIdentifier:@"CreateDepositVC"];
+    createDepositVC.delegate = self;
+    
+    [self setRootViewController:[self navigationControllerWithRootViewConntroller:createDepositVC]];
+}
+
+- (void)showMyDepositsVC {
+    
+    MyDepositsVC *myDepositsVC = [self.mainStoryboard instantiateViewControllerWithIdentifier:@"MyDepositsVC"];
+    myDepositsVC.delegate = self;
+    
+    [self setRootViewController:[self navigationControllerWithRootViewConntroller:myDepositsVC]];
+}
+
+
 - (UINavigationController*)navigationControllerWithRootViewConntroller:(UIViewController*)vc {
     
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
@@ -93,6 +112,12 @@
 - (void)didSelectRow:(NSInteger)row {
     
     switch (row) {
+        case 0:
+            [self showMyDepositsVC];
+            break;
+        case 1:
+            [self showCreateDepositVC];
+            break;
         case 2:
             [self showBankVC];
             break;
@@ -106,6 +131,7 @@
         default:
             break;
     }
+    [self hideLeftViewAnimated:self];
 }
 
 - (void)leftViewWillLayoutSubviewsWithSize:(CGSize)size {

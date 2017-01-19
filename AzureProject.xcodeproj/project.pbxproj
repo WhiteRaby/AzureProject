@@ -37,6 +37,10 @@
 		A8B861AC1E25C5AF00AB7A38 /* QuickCalcVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B861AB1E25C5AF00AB7A38 /* QuickCalcVC.m */; };
 		A8B861B21E25E66200AB7A38 /* SmartView.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B861B11E25E66200AB7A38 /* SmartView.m */; };
 		A8B861B81E27044500AB7A38 /* CreateDepositVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B861B71E27044500AB7A38 /* CreateDepositVC.m */; };
+		A8B861BB1E2724AF00AB7A38 /* AlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B861BA1E2724AF00AB7A38 /* AlertController.m */; };
+		A8B861BE1E27373D00AB7A38 /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B861BD1E27373D00AB7A38 /* Account.m */; };
+		A8F488051E30B62500048B64 /* MyDepositsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F488041E30B62500048B64 /* MyDepositsVC.m */; };
+		A8F488081E30C14000048B64 /* DepositVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F488071E30C14000048B64 /* DepositVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +100,14 @@
 		A8B861B51E2619DF00AB7A38 /* MenuActionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuActionDelegate.h; sourceTree = "<group>"; };
 		A8B861B61E27044500AB7A38 /* CreateDepositVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateDepositVC.h; sourceTree = "<group>"; };
 		A8B861B71E27044500AB7A38 /* CreateDepositVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateDepositVC.m; sourceTree = "<group>"; };
+		A8B861B91E2724AF00AB7A38 /* AlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertController.h; sourceTree = "<group>"; };
+		A8B861BA1E2724AF00AB7A38 /* AlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertController.m; sourceTree = "<group>"; };
+		A8B861BC1E27373D00AB7A38 /* Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
+		A8B861BD1E27373D00AB7A38 /* Account.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Account.m; sourceTree = "<group>"; };
+		A8F488031E30B62500048B64 /* MyDepositsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyDepositsVC.h; sourceTree = "<group>"; };
+		A8F488041E30B62500048B64 /* MyDepositsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyDepositsVC.m; sourceTree = "<group>"; };
+		A8F488061E30C14000048B64 /* DepositVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DepositVC.h; sourceTree = "<group>"; };
+		A8F488071E30C14000048B64 /* DepositVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DepositVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +158,7 @@
 				A842AE641E23F07F00C9D317 /* ViewController */,
 				A842AE661E23F13200C9D317 /* Model */,
 				A8B8619D1E2586A600AB7A38 /* View */,
+				A842AE4E1E23EF7900C9D317 /* Main.storyboard */,
 				A842AE541E23EF7900C9D317 /* Assets.xcassets */,
 				A842AE511E23EF7900C9D317 /* AzureProject.xcdatamodeld */,
 				A8B861961E2581EB00AB7A38 /* Lib */,
@@ -183,6 +196,10 @@
 				A8B861AB1E25C5AF00AB7A38 /* QuickCalcVC.m */,
 				A8B861B61E27044500AB7A38 /* CreateDepositVC.h */,
 				A8B861B71E27044500AB7A38 /* CreateDepositVC.m */,
+				A8F488031E30B62500048B64 /* MyDepositsVC.h */,
+				A8F488041E30B62500048B64 /* MyDepositsVC.m */,
+				A8F488061E30C14000048B64 /* DepositVC.h */,
+				A8F488071E30C14000048B64 /* DepositVC.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -197,6 +214,8 @@
 				A8B861A71E25ACDF00AB7A38 /* NSDictionary+ParseData.h */,
 				A8B861A81E25ACDF00AB7A38 /* NSDictionary+ParseData.m */,
 				A8B861B51E2619DF00AB7A38 /* MenuActionDelegate.h */,
+				A8B861B91E2724AF00AB7A38 /* AlertController.h */,
+				A8B861BA1E2724AF00AB7A38 /* AlertController.m */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -210,6 +229,8 @@
 				A8B861941E2569A100AB7A38 /* Bank.m */,
 				A8B861A31E25A49700AB7A38 /* Offer.h */,
 				A8B861A41E25A49700AB7A38 /* Offer.m */,
+				A8B861BC1E27373D00AB7A38 /* Account.h */,
+				A8B861BD1E27373D00AB7A38 /* Account.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -253,7 +274,6 @@
 		A8B8619D1E2586A600AB7A38 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A842AE4E1E23EF7900C9D317 /* Main.storyboard */,
 				A8B8619E1E2586DC00AB7A38 /* ContentCollectionViewCell.h */,
 				A8B8619F1E2586DC00AB7A38 /* ContentCollectionViewCell.m */,
 				A8B861A01E2586DC00AB7A38 /* ContentCollectionViewCell.xib */,
@@ -387,6 +407,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8B861BB1E2724AF00AB7A38 /* AlertController.m in Sources */,
 				A8B8619C1E2582A200AB7A38 /* OffersVC.m in Sources */,
 				A8B861951E2569A100AB7A38 /* Bank.m in Sources */,
 				A8555FE41E2556F100761A43 /* BanksVC.m in Sources */,
@@ -394,10 +415,12 @@
 				A8B861B21E25E66200AB7A38 /* SmartView.m in Sources */,
 				A8B861B81E27044500AB7A38 /* CreateDepositVC.m in Sources */,
 				A842AE631E23EFE200C9D317 /* ServerManager.m in Sources */,
+				A8B861BE1E27373D00AB7A38 /* Account.m in Sources */,
 				A842AE4D1E23EF7900C9D317 /* LoginVC.m in Sources */,
 				A8555FDF1E25491000761A43 /* LGSideMenuControllerGesturesHandler.m in Sources */,
 				A8555FD41E25434400761A43 /* SideMenuVC.m in Sources */,
 				A8555FD11E25427800761A43 /* BaseVC.m in Sources */,
+				A8F488051E30B62500048B64 /* MyDepositsVC.m in Sources */,
 				A8B861A11E2586DC00AB7A38 /* ContentCollectionViewCell.m in Sources */,
 				A8B861991E25820C00AB7A38 /* CustomCollectionViewLayout.m in Sources */,
 				A842AE6F1E24256B00C9D317 /* RegisterVC.m in Sources */,
@@ -410,6 +433,7 @@
 				A842AE531E23EF7900C9D317 /* AzureProject.xcdatamodeld in Sources */,
 				A8B861A91E25ACDF00AB7A38 /* NSDictionary+ParseData.m in Sources */,
 				A8555FE01E25491000761A43 /* LGSideMenuView.m in Sources */,
+				A8F488081E30C14000048B64 /* DepositVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

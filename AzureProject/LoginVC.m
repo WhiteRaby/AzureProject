@@ -31,6 +31,9 @@
     [super viewDidLoad];
     
     [self initUI];
+//    [[ServerManager sharedInstance] getUsersWithCompletion:^(BOOL success, id result) {
+//        NSLog(@"%@",result);
+//    }];
 }
 
 - (void)initUI {
@@ -71,8 +74,10 @@
         
         if (success) {
             [self saveLoginAndPassword];
+            [ServerManager sharedInstance].user = result;
             [self presentViewController:[BaseVC new] animated:YES completion:nil];
         } else {
+            NSLog(@"%@",result);
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                 [self showSignInError];
             });
