@@ -14,15 +14,17 @@
 
 @implementation AlertController
 
-+ (void)showMessage:(NSString*)message withText:(NSString*)text target:(UIViewController*)target {
++ (void)showMessage:(NSString*)message withText:(NSString*)text target:(UIViewController*)target completion:(void(^)())completion {
     
-    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Incorrect login or password"
-                                                                             message:@"Try again!"
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:message
+                                                                             message:text
                                                                       preferredStyle:UIAlertControllerStyleAlert];
     
     [alertController addAction:[UIAlertAction actionWithTitle:@"OK"
                                                         style:UIAlertActionStyleDefault
-                                                      handler:nil]];
+                                                      handler:^(UIAlertAction * _Nonnull action) {
+                                                          completion();
+                                                      }]];
     
     [target presentViewController:alertController animated:YES completion:nil];
 }

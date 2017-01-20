@@ -7,9 +7,11 @@
 //
 
 #import "RegisterVC.h"
-#import "ServerManager.h"
-#import "User.h"
+//#import "ServerManager.h"
+//#import "User.h"
 #import <MBProgressHUD.h>
+#import "ServerManagerV2.h"
+#import "User+CoreDataClass.h"
 
 @interface RegisterVC ()
 
@@ -30,30 +32,40 @@
     [self.loginTextField resignFirstResponder];
     [self.passwordTextField resignFirstResponder];
     
-    User *user = [User new];
-    user.login = self.loginTextField.text;
-    user.password = self.passwordTextField.text;
+
     
-    if (![self checkEmail:user.login]) {
+    
+    if (![self checkEmail:self.loginTextField.text]) {
         [self showEmailError];
         return;
     }
     
+    User *user = [User create];
+    user.login = self.loginTextField.text;
+    user.password = self.passwordTextField.text;
+    [[ServerManagerV2 sharedInstance] save];
+    
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    [[ServerManager sharedInstance] saveUser:user completion:^(BOOL success, id result) {
-        
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [MBProgressHUD hideHUDForView:self.view animated:YES];
-        });
-        if (success) {
-            if (self.completion) {
-                self.completion(user);
-            }
-            [self dismissViewControllerAnimated:YES completion:nil];
-        } else {
-            NSLog(@"%@", result);
-        }
-    }];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [MBProgressHUD hideHUDForView:self.view animated:YES];
+        [self dismissViewControllerAnimated:YES completion:nil];
+    });
+    
+    
+//    [[ServerManager sharedInstance] saveUser:user completion:^(BOOL success, id result) {
+//        
+//        dispatch_async(dispatch_get_main_queue(), ^{
+//            [MBProgressHUD hideHUDForView:self.view animated:YES];
+//        });
+//        if (success) {
+//            if (self.completion) {
+//                self.completion(user);
+//            }
+//        } else {
+//            NSLog(@"%@", result);
+//        }
+//    }];
 }
 
 - (BOOL)checkEmail:(NSString*)email {

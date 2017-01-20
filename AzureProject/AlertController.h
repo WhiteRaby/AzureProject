@@ -10,6 +10,6 @@
 
 @interface AlertController : UIAlertController
 
-+ (void)showMessage:(NSString*)message withText:(NSString*)text target:(UIViewController*)target;
++ (void)showMessage:(NSString*)message withText:(NSString*)text target:(UIViewController*)target completion:(void(^)())completion;
 
 @end

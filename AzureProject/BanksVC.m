@@ -7,8 +7,13 @@
 //
 
 #import "BanksVC.h"
-#import "ServerManager.h"
-#import "Bank.h"
+//#import "ServerManager.h"
+//#import "Bank.h"
+#import "ServerManagerV2.h"
+#import "Bank+CoreDataClass.h"
+#import <MBProgressHUD.h>
+#import "BankDetailVC.h"
+
 
 @interface BanksVC () <UITableViewDelegate, UITableViewDataSource>
 
@@ -26,12 +31,16 @@
     self.title = @"Banks";
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"menu-icon"] style:UIBarButtonItemStylePlain target:self action:@selector(menuAction)];;
     
-    [[ServerManager sharedInstance] getBanksCompletion:^(BOOL success, id result) {
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    
+    [[ServerManagerV2 sharedInstance] getBanksCompletion:^(BOOL success, id result) {
         
         if (success) {
             self.banks = result;
             [self.tableView reloadData];
         }
+        
+        [MBProgressHUD hideHUDForView:self.view animated:YES];
     }];
 }
 
@@ -68,6 +77,16 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     return 60.f;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    BankDetailVC *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"BankDetailVC"];
+    vc.bank = self.banks[indexPath.row];
+    [self.navigationController pushViewController:vc animated:YES];
+    
 }
 
 @end

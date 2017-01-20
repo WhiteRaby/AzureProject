@@ -7,13 +7,15 @@
 //
 
 #import "LoginVC.h"
-#import "ServerManager.h"
-#import "User.h"
+//#import "ServerManager.h"
+//#import "User.h"
 #import <MBProgressHUD.h>
 #import "RegisterVC.h"
 #import "BaseVC.h"
 #import "SideMenuVC.h"
 #import "OffersVC.h"
+#import "ServerManagerV2.h"
+#import "User+CoreDataClass.h"
 
 @interface LoginVC () <UITextFieldDelegate>
 
@@ -34,6 +36,10 @@
 //    [[ServerManager sharedInstance] getUsersWithCompletion:^(BOOL success, id result) {
 //        NSLog(@"%@",result);
 //    }];
+    
+    [[ServerManagerV2 sharedInstance] getUsersWithCompletion:^(BOOL success, id result) {
+        NSLog(@"%@", result);
+    }];
 }
 
 - (void)initUI {
@@ -66,7 +72,7 @@
     
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     
-    [[ServerManager sharedInstance] getUserWithLogin:login andPassword:password completion:^(BOOL success, id result) {
+    [[ServerManagerV2 sharedInstance] getUserWithLogin:login andPassword:password completion:^(BOOL success, id result) {
         
         dispatch_async(dispatch_get_main_queue(), ^{
             [MBProgressHUD hideHUDForView:self.view animated:YES];
@@ -74,7 +80,7 @@
         
         if (success) {
             [self saveLoginAndPassword];
-            [ServerManager sharedInstance].user = result;
+            [ServerManagerV2 sharedInstance].user = result;
             [self presentViewController:[BaseVC new] animated:YES completion:nil];
         } else {
             NSLog(@"%@",result);

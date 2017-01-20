@@ -7,12 +7,20 @@
 //
 
 #import "CreateDepositVC.h"
-#import "ServerManager.h"
-#import "Offer.h"
-#import "Bank.h"
+//#import "ServerManager.h"
+//#import "Offer.h"
+//#import "Bank.h"
 #import <MBProgressHUD.h>
-#import "Account.h"
-#import "User.h"
+//#import "Account.h"
+//#import "User.h"
+#import "ServerManagerV2.h"
+#import "User+CoreDataClass.h"
+#import "Offer+CoreDataClass.h"
+#import "Bank+CoreDataClass.h"
+#import "Account+CoreDataClass.h"
+#import "AlertController.h"
+#import "DepositVC.h"
+
 
 @interface CreateDepositVC () <UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *bankTextField;
@@ -59,6 +67,7 @@
     
     self.datePicker = [[UIDatePicker alloc] initWithFrame:CGRectMake(0, 50, 100, 250)];
     self.datePicker.datePickerMode = UIDatePickerModeDate;
+    self.datePicker.minimumDate = [NSDate date];
     [self.datePicker addTarget:self action:@selector(incidentDateValueChanged:) forControlEvents:UIControlEventValueChanged];
 
     self.startTimeTextField.inputView = self.datePicker;
@@ -79,9 +88,8 @@
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
         
         dispatch_semaphore_t semaphore1 = dispatch_semaphore_create(0);
-        dispatch_semaphore_t semaphore2 = dispatch_semaphore_create(0);
         
-        [[ServerManager sharedInstance] getBanksCompletion:^(BOOL success, id result) {
+        [[ServerManagerV2 sharedInstance] getBanksCompletion:^(BOOL success, id result) {
             if (success) {
                 
                 self.banks = result;
@@ -92,29 +100,29 @@
         }];
         dispatch_semaphore_wait(semaphore1, DISPATCH_TIME_FOREVER);
         
+//        
+//        [[ServerManager sharedInstance] getOffersCompletion:^(BOOL success, id result) {
+//            if (success) {
+//                
+//                self.offers = result;
+//            } else {
+//                NSLog(@"error = %@", result);
+//            }
+//            dispatch_semaphore_signal(semaphore2);
+//
+//        }];
+//        dispatch_semaphore_wait(semaphore2, DISPATCH_TIME_FOREVER);
         
-        [[ServerManager sharedInstance] getOffersCompletion:^(BOOL success, id result) {
-            if (success) {
-                
-                self.offers = result;
-            } else {
-                NSLog(@"error = %@", result);
-            }
-            dispatch_semaphore_signal(semaphore2);
-
-        }];
-        dispatch_semaphore_wait(semaphore2, DISPATCH_TIME_FOREVER);
-        
-        NSLog(@"banks = %ld, offers = %ld", [self.banks count], [self.offers count]);
-        
-        for (Offer *offer in self.offers) {
-            for (Bank *bank in self.banks) {
-                if ([bank.ID isEqualToString:offer.bankID]) {
-                    [bank.offers addObject:offer];
-                    break;
-                }
-            }
-        }
+//        NSLog(@"banks = %ld, offers = %ld", [self.banks count], [self.offers count]);
+//        
+//        for (Offer *offer in self.offers) {
+//            for (Bank *bank in self.banks) {
+//                if ([bank.ID isEqualToString:offer.bankID]) {
+//                    [bank.offers addObject:offer];
+//                    break;
+//                }
+//            }
+//        }
         
         dispatch_async(dispatch_get_main_queue(), ^{
             [MBProgressHUD hideHUDForView:self.view animated:YES];
@@ -153,7 +161,7 @@
         return ((Bank*)self.banks[row]).name;
         
     } else if (pickerView == self.offerPicker && [self.selectedBank.offers count] > row) {
-        return ((Offer*)self.selectedBank.offers[row]).name;
+        return ((Offer*)[self.selectedBank.offers allObjects][row]).name;
     }
     
     return @"Null";
@@ -166,7 +174,7 @@
         self.bankTextField.text = self.selectedBank.name;
         
     } else if (pickerView == self.offerPicker && [self.selectedBank.offers count] > row) {
-        self.selectedOffer = self.selectedBank.offers[row];
+        self.selectedOffer = [self.selectedBank.offers allObjects][row];
         self.offerTextField.text = self.selectedOffer.name;
     }
 }
@@ -178,9 +186,9 @@
             
             Offer *offer;
             if ([self.selectedBank.offers count] > [self.offerPicker selectedRowInComponent:0]) {
-                offer = self.selectedBank.offers[[self.offerPicker selectedRowInComponent:0]];
+                offer = [self.selectedBank.offers allObjects][[self.offerPicker selectedRowInComponent:0]];
             } else {
-                offer = [self.selectedBank.offers firstObject];
+                offer = [self.selectedBank.offers anyObject];
             }
             self.offerTextField.text = offer.name;
             self.selectedOffer = offer;
@@ -211,37 +219,38 @@
 
 - (IBAction)saveAction:(id)sender {
 
-    Account *account = [Account new];
+    Account *account = [Account create];
     
     NSDate *startDate = self.datePicker.date;
     NSInteger month = [self.depositTermTextField.text integerValue];
     NSCalendar *cal = [NSCalendar currentCalendar];
     NSDate *finishDate = [cal dateByAddingUnit:NSCalendarUnitMonth value:month toDate:startDate options:0];
     
-    account.userLogin = [ServerManager sharedInstance].user.login;;
+    account.userLogin = [ServerManagerV2 sharedInstance].user.login;
     account.startDate = startDate;
     account.finishDate = finishDate;
-    account.bankID = self.selectedBank.ID;
     account.startFunds = [self.startAmountTextField.text integerValue];
     account.holderName = self.holderNameTextField.text;
     account.notice = self.noticeTextField.text;
-    account.offerID = self.selectedOffer.ID;
+    account.offer = self.selectedOffer;
     account.depositTerm = [self.depositTermTextField.text integerValue];
     
-    [[ServerManager sharedInstance] saveAccount:account completion:^(BOOL success, id result) {
-        if (success) {
+    [[ServerManagerV2 sharedInstance] save];
+    
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [MBProgressHUD hideHUDForView:self.view animated:YES];
+        [AlertController showMessage:@"Congratulations!" withText:@"Account was added successfully" target:self completion:^{
             
-            User *user = [ServerManager sharedInstance].user;
-            [[ServerManager sharedInstance] getAccountsWithUserLogin:user.login completion:^(BOOL success, id result) {
-                
-                
-//                [self.navigationController setViewControllers:@[] animated:YES];
-                
-                NSLog(@"%@", result);
-            }];
-            
-        }
-    }];
+            DepositVC *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"DepositVC"];
+            vc.deposit = account;
+            vc.isRootVC = YES;
+            vc.delegate = self.delegate;
+            [self.navigationController pushViewController:vc animated:YES];
+        }];
+    });
 }
+
+
 
 @end

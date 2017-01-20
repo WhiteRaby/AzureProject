@@ -9,9 +9,14 @@
 #import "OffersVC.h"
 #import "CustomCollectionViewLayout.h"
 #import "ContentCollectionViewCell.h"
-#import "ServerManager.h"
-#import "Offer.h"
-#import "Bank.h"
+//#import "ServerManager.h"
+//#import "Offer.h"
+//#import "Bank.h"
+#import "ServerManagerV2.h"
+#import "Offer+CoreDataClass.h"
+#import "Bank+CoreDataClass.h"
+#import <MBProgressHUD.h>
+
 
 @interface OffersVC () <UICollectionViewDelegate, UICollectionViewDataSource>
 
@@ -41,10 +46,13 @@
     
     self.offers = [NSArray array];
     
+    
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
         dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
-        [[ServerManager sharedInstance] getOffersCompletion:^(BOOL success, id result) {
+        [[ServerManagerV2 sharedInstance] getOffersCompletion:^(BOOL success, id result) {
             
+            [MBProgressHUD hideHUDForView:self.view animated:YES];
             if (success) {
                 self.offers = result;
             } else {
@@ -55,21 +63,21 @@
         
         dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
         
-        dispatch_group_t group = dispatch_group_create();
-        for (Offer *offer in self.offers) {
-            
-            dispatch_group_enter(group);
-            [[ServerManager sharedInstance] getBankWithID:offer.bankID Completion:^(BOOL success, id result) {
-                if (success) {
-                    offer.bank = result;
-                } else {
-                    NSLog(@"%@", result);
-                }
-                dispatch_group_leave(group);
-            }];
-        }
-        dispatch_group_wait(group, DISPATCH_TIME_FOREVER);
-        
+//        dispatch_group_t group = dispatch_group_create();
+//        for (Offer *offer in self.offers) {
+//            
+//            dispatch_group_enter(group);
+//            [[ServerManager sharedInstance] getBankWithID:offer.bankID Completion:^(BOOL success, id result) {
+//                if (success) {
+//                    offer.bank = result;
+//                } else {
+//                    NSLog(@"%@", result);
+//                }
+//                dispatch_group_leave(group);
+//            }];
+//        }
+//        dispatch_group_wait(group, DISPATCH_TIME_FOREVER);
+//        
         dispatch_async(dispatch_get_main_queue(), ^{
             [self.collectionView reloadData];
         });

@@ -7,8 +7,11 @@
 //
 
 #import "SideMenuVC.h"
+#import "ServerManagerV2.h"
+#import "User+CoreDataClass.h"
 
 @interface SideMenuVC ()
+@property (weak, nonatomic) IBOutlet UILabel *emailLabel;
 
 @end
 
@@ -23,6 +26,9 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    self.emailLabel.text = [ServerManagerV2 sharedInstance].user.login;
+    
 }
 
 #pragma mark - Table view data source

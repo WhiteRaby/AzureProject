@@ -7,11 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MenuActionDelegate.h"
 
 @class Account;
 
 @interface DepositVC : UIViewController
 
 @property (strong, nonatomic) Account *deposit;
+@property (nonatomic) BOOL isRootVC;
+@property (weak, nonatomic) id<MenuActionDelegate> delegate;
 
 @end

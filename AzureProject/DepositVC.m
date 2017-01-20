@@ -8,9 +8,13 @@
 
 #import "DepositVC.h"
 #import "SmartView.h"
-#import "Offer.h"
-#import "Account.h"
-#import "Bank.h"
+//#import "Offer.h"
+//#import "Account.h"
+//#import "Bank.h"
+#import "Offer+CoreDataClass.h"
+#import "Account+CoreDataClass.h"
+#import "Bank+CoreDataClass.h"
+
 
 @interface DepositVC ()
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
@@ -29,6 +33,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    if (self.isRootVC) {
+        self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"menu-icon"] style:UIBarButtonItemStylePlain target:self.delegate action:@selector(menuAction)];
+    }
+    
     double startAmount = self.deposit.startFunds;
     double interestRate = ((double)self.deposit.offer.interestRate / 100) + 1;
     double depositDuration = self.deposit.depositTerm;
@@ -40,7 +48,7 @@
     
     self.resultLabel.text = [NSString stringWithFormat:@"Result Sum: %.2f", res];
     
-    self.interestLabel.text = [NSString stringWithFormat:@"Interest Rate: %ld%%", self.deposit.offer.interestRate];
+    self.interestLabel.text = [NSString stringWithFormat:@"Interest Rate: %lld%%", self.deposit.offer.interestRate];
     
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat:@"MM.dd.yyyy"];

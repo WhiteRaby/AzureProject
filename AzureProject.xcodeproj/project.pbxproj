@@ -12,12 +12,9 @@
 		A842AE4A1E23EF7900C9D317 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A842AE491E23EF7900C9D317 /* AppDelegate.m */; };
 		A842AE4D1E23EF7900C9D317 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A842AE4C1E23EF7900C9D317 /* LoginVC.m */; };
 		A842AE501E23EF7900C9D317 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A842AE4E1E23EF7900C9D317 /* Main.storyboard */; };
-		A842AE531E23EF7900C9D317 /* AzureProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A842AE511E23EF7900C9D317 /* AzureProject.xcdatamodeld */; };
 		A842AE551E23EF7900C9D317 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A842AE541E23EF7900C9D317 /* Assets.xcassets */; };
 		A842AE581E23EF7900C9D317 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A842AE561E23EF7900C9D317 /* LaunchScreen.storyboard */; };
 		A842AE601E23EFAC00C9D317 /* MicrosoftAzureMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A842AE5F1E23EFAC00C9D317 /* MicrosoftAzureMobile.framework */; };
-		A842AE631E23EFE200C9D317 /* ServerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A842AE621E23EFE200C9D317 /* ServerManager.m */; };
-		A842AE691E23F15D00C9D317 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = A842AE681E23F15D00C9D317 /* User.m */; };
 		A842AE6C1E23F83000C9D317 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A842AE6B1E23F83000C9D317 /* WebKit.framework */; };
 		A842AE6F1E24256B00C9D317 /* RegisterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A842AE6E1E24256B00C9D317 /* RegisterVC.m */; };
 		A8555FD11E25427800761A43 /* BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A8555FD01E25427800761A43 /* BaseVC.m */; };
@@ -27,20 +24,27 @@
 		A8555FE01E25491000761A43 /* LGSideMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = A8555FDB1E25491000761A43 /* LGSideMenuView.m */; };
 		A8555FE11E25491000761A43 /* UIViewController+LGSideMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8555FDD1E25491000761A43 /* UIViewController+LGSideMenuController.m */; };
 		A8555FE41E2556F100761A43 /* BanksVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A8555FE31E2556F100761A43 /* BanksVC.m */; };
-		A8B861951E2569A100AB7A38 /* Bank.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B861941E2569A100AB7A38 /* Bank.m */; };
 		A8B861991E25820C00AB7A38 /* CustomCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B861981E25820C00AB7A38 /* CustomCollectionViewLayout.m */; };
 		A8B8619C1E2582A200AB7A38 /* OffersVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B8619B1E2582A200AB7A38 /* OffersVC.m */; };
 		A8B861A11E2586DC00AB7A38 /* ContentCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B8619F1E2586DC00AB7A38 /* ContentCollectionViewCell.m */; };
 		A8B861A21E2586DC00AB7A38 /* ContentCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8B861A01E2586DC00AB7A38 /* ContentCollectionViewCell.xib */; };
-		A8B861A51E25A49700AB7A38 /* Offer.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B861A41E25A49700AB7A38 /* Offer.m */; };
 		A8B861A91E25ACDF00AB7A38 /* NSDictionary+ParseData.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B861A81E25ACDF00AB7A38 /* NSDictionary+ParseData.m */; };
 		A8B861AC1E25C5AF00AB7A38 /* QuickCalcVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B861AB1E25C5AF00AB7A38 /* QuickCalcVC.m */; };
 		A8B861B21E25E66200AB7A38 /* SmartView.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B861B11E25E66200AB7A38 /* SmartView.m */; };
 		A8B861B81E27044500AB7A38 /* CreateDepositVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B861B71E27044500AB7A38 /* CreateDepositVC.m */; };
 		A8B861BB1E2724AF00AB7A38 /* AlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B861BA1E2724AF00AB7A38 /* AlertController.m */; };
-		A8B861BE1E27373D00AB7A38 /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B861BD1E27373D00AB7A38 /* Account.m */; };
 		A8F488051E30B62500048B64 /* MyDepositsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F488041E30B62500048B64 /* MyDepositsVC.m */; };
 		A8F488081E30C14000048B64 /* DepositVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F488071E30C14000048B64 /* DepositVC.m */; };
+		A8F488371E32407800048B64 /* ServerManagerV2.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F488361E32407800048B64 /* ServerManagerV2.m */; };
+		A8F488DF1E327D6D00048B64 /* User+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F488DD1E327D6D00048B64 /* User+CoreDataProperties.m */; };
+		A8F488ED1E327D9200048B64 /* Offer+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F488E31E327D9200048B64 /* Offer+CoreDataProperties.m */; };
+		A8F488EF1E327D9200048B64 /* Account+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F488E71E327D9200048B64 /* Account+CoreDataProperties.m */; };
+		A8F488F11E327D9200048B64 /* Bank+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F488EB1E327D9200048B64 /* Bank+CoreDataProperties.m */; };
+		A8F488F21E32A4AC00048B64 /* User+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F488DB1E327D6D00048B64 /* User+CoreDataClass.m */; };
+		A8F488F31E32A56F00048B64 /* Offer+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F488E11E327D9200048B64 /* Offer+CoreDataClass.m */; };
+		A8F488F41E32A56F00048B64 /* Account+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F488E51E327D9200048B64 /* Account+CoreDataClass.m */; };
+		A8F488F51E32A56F00048B64 /* Bank+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F488E91E327D9200048B64 /* Bank+CoreDataClass.m */; };
+		A8F488F81E32CF5600048B64 /* BankDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F488F71E32CF5600048B64 /* BankDetailVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,10 +63,6 @@
 		A842AE571E23EF7900C9D317 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A842AE591E23EF7900C9D317 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A842AE5F1E23EFAC00C9D317 /* MicrosoftAzureMobile.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MicrosoftAzureMobile.framework; sourceTree = "<group>"; };
-		A842AE611E23EFE200C9D317 /* ServerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerManager.h; sourceTree = "<group>"; };
-		A842AE621E23EFE200C9D317 /* ServerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerManager.m; sourceTree = "<group>"; };
-		A842AE671E23F15D00C9D317 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
-		A842AE681E23F15D00C9D317 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		A842AE6B1E23F83000C9D317 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		A842AE6D1E24256B00C9D317 /* RegisterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterVC.h; sourceTree = "<group>"; };
 		A842AE6E1E24256B00C9D317 /* RegisterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterVC.m; sourceTree = "<group>"; };
@@ -80,8 +80,6 @@
 		A8555FDD1E25491000761A43 /* UIViewController+LGSideMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LGSideMenuController.m"; sourceTree = "<group>"; };
 		A8555FE21E2556F100761A43 /* BanksVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BanksVC.h; sourceTree = "<group>"; };
 		A8555FE31E2556F100761A43 /* BanksVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BanksVC.m; sourceTree = "<group>"; };
-		A8B861931E2569A100AB7A38 /* Bank.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bank.h; sourceTree = "<group>"; };
-		A8B861941E2569A100AB7A38 /* Bank.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bank.m; sourceTree = "<group>"; };
 		A8B861971E25820C00AB7A38 /* CustomCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCollectionViewLayout.h; sourceTree = "<group>"; };
 		A8B861981E25820C00AB7A38 /* CustomCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCollectionViewLayout.m; sourceTree = "<group>"; };
 		A8B8619A1E2582A200AB7A38 /* OffersVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OffersVC.h; sourceTree = "<group>"; };
@@ -89,8 +87,6 @@
 		A8B8619E1E2586DC00AB7A38 /* ContentCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentCollectionViewCell.h; sourceTree = "<group>"; };
 		A8B8619F1E2586DC00AB7A38 /* ContentCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentCollectionViewCell.m; sourceTree = "<group>"; };
 		A8B861A01E2586DC00AB7A38 /* ContentCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContentCollectionViewCell.xib; sourceTree = "<group>"; };
-		A8B861A31E25A49700AB7A38 /* Offer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Offer.h; sourceTree = "<group>"; };
-		A8B861A41E25A49700AB7A38 /* Offer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Offer.m; sourceTree = "<group>"; };
 		A8B861A71E25ACDF00AB7A38 /* NSDictionary+ParseData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ParseData.h"; sourceTree = "<group>"; };
 		A8B861A81E25ACDF00AB7A38 /* NSDictionary+ParseData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ParseData.m"; sourceTree = "<group>"; };
 		A8B861AA1E25C5AF00AB7A38 /* QuickCalcVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickCalcVC.h; sourceTree = "<group>"; };
@@ -102,12 +98,30 @@
 		A8B861B71E27044500AB7A38 /* CreateDepositVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateDepositVC.m; sourceTree = "<group>"; };
 		A8B861B91E2724AF00AB7A38 /* AlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertController.h; sourceTree = "<group>"; };
 		A8B861BA1E2724AF00AB7A38 /* AlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertController.m; sourceTree = "<group>"; };
-		A8B861BC1E27373D00AB7A38 /* Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
-		A8B861BD1E27373D00AB7A38 /* Account.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Account.m; sourceTree = "<group>"; };
 		A8F488031E30B62500048B64 /* MyDepositsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyDepositsVC.h; sourceTree = "<group>"; };
 		A8F488041E30B62500048B64 /* MyDepositsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyDepositsVC.m; sourceTree = "<group>"; };
 		A8F488061E30C14000048B64 /* DepositVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DepositVC.h; sourceTree = "<group>"; };
 		A8F488071E30C14000048B64 /* DepositVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DepositVC.m; sourceTree = "<group>"; };
+		A8F488351E32407800048B64 /* ServerManagerV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerManagerV2.h; sourceTree = "<group>"; };
+		A8F488361E32407800048B64 /* ServerManagerV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerManagerV2.m; sourceTree = "<group>"; };
+		A8F488DA1E327D6D00048B64 /* User+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "User+CoreDataClass.h"; sourceTree = "<group>"; };
+		A8F488DB1E327D6D00048B64 /* User+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "User+CoreDataClass.m"; sourceTree = "<group>"; };
+		A8F488DC1E327D6D00048B64 /* User+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "User+CoreDataProperties.h"; sourceTree = "<group>"; };
+		A8F488DD1E327D6D00048B64 /* User+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "User+CoreDataProperties.m"; sourceTree = "<group>"; };
+		A8F488E01E327D9200048B64 /* Offer+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Offer+CoreDataClass.h"; sourceTree = "<group>"; };
+		A8F488E11E327D9200048B64 /* Offer+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Offer+CoreDataClass.m"; sourceTree = "<group>"; };
+		A8F488E21E327D9200048B64 /* Offer+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Offer+CoreDataProperties.h"; sourceTree = "<group>"; };
+		A8F488E31E327D9200048B64 /* Offer+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Offer+CoreDataProperties.m"; sourceTree = "<group>"; };
+		A8F488E41E327D9200048B64 /* Account+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Account+CoreDataClass.h"; sourceTree = "<group>"; };
+		A8F488E51E327D9200048B64 /* Account+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Account+CoreDataClass.m"; sourceTree = "<group>"; };
+		A8F488E61E327D9200048B64 /* Account+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Account+CoreDataProperties.h"; sourceTree = "<group>"; };
+		A8F488E71E327D9200048B64 /* Account+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Account+CoreDataProperties.m"; sourceTree = "<group>"; };
+		A8F488E81E327D9200048B64 /* Bank+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bank+CoreDataClass.h"; sourceTree = "<group>"; };
+		A8F488E91E327D9200048B64 /* Bank+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Bank+CoreDataClass.m"; sourceTree = "<group>"; };
+		A8F488EA1E327D9200048B64 /* Bank+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bank+CoreDataProperties.h"; sourceTree = "<group>"; };
+		A8F488EB1E327D9200048B64 /* Bank+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Bank+CoreDataProperties.m"; sourceTree = "<group>"; };
+		A8F488F61E32CF5600048B64 /* BankDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankDetailVC.h; sourceTree = "<group>"; };
+		A8F488F71E32CF5600048B64 /* BankDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankDetailVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +214,8 @@
 				A8F488041E30B62500048B64 /* MyDepositsVC.m */,
 				A8F488061E30C14000048B64 /* DepositVC.h */,
 				A8F488071E30C14000048B64 /* DepositVC.m */,
+				A8F488F61E32CF5600048B64 /* BankDetailVC.h */,
+				A8F488F71E32CF5600048B64 /* BankDetailVC.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -209,8 +225,8 @@
 			children = (
 				A842AE481E23EF7900C9D317 /* AppDelegate.h */,
 				A842AE491E23EF7900C9D317 /* AppDelegate.m */,
-				A842AE611E23EFE200C9D317 /* ServerManager.h */,
-				A842AE621E23EFE200C9D317 /* ServerManager.m */,
+				A8F488351E32407800048B64 /* ServerManagerV2.h */,
+				A8F488361E32407800048B64 /* ServerManagerV2.m */,
 				A8B861A71E25ACDF00AB7A38 /* NSDictionary+ParseData.h */,
 				A8B861A81E25ACDF00AB7A38 /* NSDictionary+ParseData.m */,
 				A8B861B51E2619DF00AB7A38 /* MenuActionDelegate.h */,
@@ -223,14 +239,22 @@
 		A842AE661E23F13200C9D317 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				A842AE671E23F15D00C9D317 /* User.h */,
-				A842AE681E23F15D00C9D317 /* User.m */,
-				A8B861931E2569A100AB7A38 /* Bank.h */,
-				A8B861941E2569A100AB7A38 /* Bank.m */,
-				A8B861A31E25A49700AB7A38 /* Offer.h */,
-				A8B861A41E25A49700AB7A38 /* Offer.m */,
-				A8B861BC1E27373D00AB7A38 /* Account.h */,
-				A8B861BD1E27373D00AB7A38 /* Account.m */,
+				A8F488E01E327D9200048B64 /* Offer+CoreDataClass.h */,
+				A8F488E11E327D9200048B64 /* Offer+CoreDataClass.m */,
+				A8F488E21E327D9200048B64 /* Offer+CoreDataProperties.h */,
+				A8F488E31E327D9200048B64 /* Offer+CoreDataProperties.m */,
+				A8F488E41E327D9200048B64 /* Account+CoreDataClass.h */,
+				A8F488E51E327D9200048B64 /* Account+CoreDataClass.m */,
+				A8F488E61E327D9200048B64 /* Account+CoreDataProperties.h */,
+				A8F488E71E327D9200048B64 /* Account+CoreDataProperties.m */,
+				A8F488E81E327D9200048B64 /* Bank+CoreDataClass.h */,
+				A8F488E91E327D9200048B64 /* Bank+CoreDataClass.m */,
+				A8F488EA1E327D9200048B64 /* Bank+CoreDataProperties.h */,
+				A8F488EB1E327D9200048B64 /* Bank+CoreDataProperties.m */,
+				A8F488DA1E327D6D00048B64 /* User+CoreDataClass.h */,
+				A8F488DB1E327D6D00048B64 /* User+CoreDataClass.m */,
+				A8F488DC1E327D6D00048B64 /* User+CoreDataProperties.h */,
+				A8F488DD1E327D6D00048B64 /* User+CoreDataProperties.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -312,7 +336,7 @@
 		A842AE3A1E23EF7900C9D317 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Alex Golovaschenko";
 				TargetAttributes = {
 					A842AE411E23EF7900C9D317 = {
@@ -407,16 +431,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8F488F31E32A56F00048B64 /* Offer+CoreDataClass.m in Sources */,
+				A8F488F41E32A56F00048B64 /* Account+CoreDataClass.m in Sources */,
+				A8F488F51E32A56F00048B64 /* Bank+CoreDataClass.m in Sources */,
+				A8F488F21E32A4AC00048B64 /* User+CoreDataClass.m in Sources */,
 				A8B861BB1E2724AF00AB7A38 /* AlertController.m in Sources */,
+				A8F488EF1E327D9200048B64 /* Account+CoreDataProperties.m in Sources */,
 				A8B8619C1E2582A200AB7A38 /* OffersVC.m in Sources */,
-				A8B861951E2569A100AB7A38 /* Bank.m in Sources */,
 				A8555FE41E2556F100761A43 /* BanksVC.m in Sources */,
 				A8B861AC1E25C5AF00AB7A38 /* QuickCalcVC.m in Sources */,
 				A8B861B21E25E66200AB7A38 /* SmartView.m in Sources */,
 				A8B861B81E27044500AB7A38 /* CreateDepositVC.m in Sources */,
-				A842AE631E23EFE200C9D317 /* ServerManager.m in Sources */,
-				A8B861BE1E27373D00AB7A38 /* Account.m in Sources */,
 				A842AE4D1E23EF7900C9D317 /* LoginVC.m in Sources */,
+				A8F488371E32407800048B64 /* ServerManagerV2.m in Sources */,
+				A8F488F11E327D9200048B64 /* Bank+CoreDataProperties.m in Sources */,
 				A8555FDF1E25491000761A43 /* LGSideMenuControllerGesturesHandler.m in Sources */,
 				A8555FD41E25434400761A43 /* SideMenuVC.m in Sources */,
 				A8555FD11E25427800761A43 /* BaseVC.m in Sources */,
@@ -424,13 +452,13 @@
 				A8B861A11E2586DC00AB7A38 /* ContentCollectionViewCell.m in Sources */,
 				A8B861991E25820C00AB7A38 /* CustomCollectionViewLayout.m in Sources */,
 				A842AE6F1E24256B00C9D317 /* RegisterVC.m in Sources */,
-				A842AE691E23F15D00C9D317 /* User.m in Sources */,
 				A8555FDE1E25491000761A43 /* LGSideMenuController.m in Sources */,
 				A842AE4A1E23EF7900C9D317 /* AppDelegate.m in Sources */,
+				A8F488ED1E327D9200048B64 /* Offer+CoreDataProperties.m in Sources */,
+				A8F488DF1E327D6D00048B64 /* User+CoreDataProperties.m in Sources */,
 				A8555FE11E25491000761A43 /* UIViewController+LGSideMenuController.m in Sources */,
 				A842AE471E23EF7900C9D317 /* main.m in Sources */,
-				A8B861A51E25A49700AB7A38 /* Offer.m in Sources */,
-				A842AE531E23EF7900C9D317 /* AzureProject.xcdatamodeld in Sources */,
+				A8F488F81E32CF5600048B64 /* BankDetailVC.m in Sources */,
 				A8B861A91E25ACDF00AB7A38 /* NSDictionary+ParseData.m in Sources */,
 				A8555FE01E25491000761A43 /* LGSideMenuView.m in Sources */,
 				A8F488081E30C14000048B64 /* DepositVC.m in Sources */,
@@ -477,6 +505,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -525,6 +554,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
