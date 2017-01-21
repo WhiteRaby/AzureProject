@@ -23,7 +23,8 @@
     [alertController addAction:[UIAlertAction actionWithTitle:@"OK"
                                                         style:UIAlertActionStyleDefault
                                                       handler:^(UIAlertAction * _Nonnull action) {
-                                                          completion();
+                                                          if (completion)
+                                                              completion();
                                                       }]];
     
     [target presentViewController:alertController animated:YES completion:nil];

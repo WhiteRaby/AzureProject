@@ -69,7 +69,7 @@
     }
     
     Bank *bank = self.banks[indexPath.row];
-    cell.textLabel.text = bank.name;
+    cell.textLabel.text = [NSString stringWithFormat:@"%ld. %@", indexPath.row + 1 , bank.name] ;
     
     return cell;
 }

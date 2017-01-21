@@ -20,6 +20,7 @@
 #import "Account+CoreDataClass.h"
 #import "AlertController.h"
 #import "DepositVC.h"
+#import "AlertController.h"
 
 
 @interface CreateDepositVC () <UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate>
@@ -49,7 +50,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.title = @"Quick Calculator";
+    self.title = @"New deposit";
     
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"menu-icon"] style:UIBarButtonItemStylePlain target:self.delegate action:@selector(menuAction)];
     
@@ -218,6 +219,15 @@
 }
 
 - (IBAction)saveAction:(id)sender {
+    
+    if (!self.selectedBank || !self.selectedOffer || [self.startTimeTextField.text isEqualToString:@""] || [self.startAmountTextField.text isEqualToString:@""] || [self.depositTermTextField.text isEqualToString:@""]) {
+        
+        [AlertController showMessage:@"Something went wrong!" withText:@"Check all fields" target:self completion:nil];
+
+        
+        return;
+    }
+    
 
     Account *account = [Account create];
     
@@ -240,14 +250,14 @@
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [MBProgressHUD hideHUDForView:self.view animated:YES];
-        [AlertController showMessage:@"Congratulations!" withText:@"Account was added successfully" target:self completion:^{
+        //[AlertController showMessage:@"Congratulations!" withText:@"Account was added successfully" target:self completion:^{
             
             DepositVC *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"DepositVC"];
             vc.deposit = account;
             vc.isRootVC = YES;
             vc.delegate = self.delegate;
             [self.navigationController pushViewController:vc animated:YES];
-        }];
+        //}];
     });
 }
 

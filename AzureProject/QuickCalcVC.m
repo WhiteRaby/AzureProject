@@ -41,14 +41,15 @@
     
     
     double startAmount = [self.startAmountTextField.text doubleValue];
-    double interestRate = ([self.InterestRateTextField.text doubleValue] / 100) + 1;
+    double interestRate = ([self.InterestRateTextField.text doubleValue] / 100);
     double depositDuration = [self.depositDuration.text doubleValue];
     
-    if (startAmount < 0 || interestRate < 1 || interestRate > 2 || depositDuration < 0) {
+    if (startAmount < 0 || interestRate < 0 || interestRate > 1 || depositDuration < 0) {
         return;
     }
     
-    double res = startAmount * pow(interestRate, depositDuration);
+    //double res = startAmount * pow(interestRate, depositDuration);
+    double res = startAmount + startAmount * interestRate * 30.42 * depositDuration / 365;
     
     self.totalAmount.text = [NSString stringWithFormat:@"Profit: %.2f", res];
     

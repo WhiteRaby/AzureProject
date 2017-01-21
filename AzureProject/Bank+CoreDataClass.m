@@ -8,7 +8,6 @@
 //
 
 #import "Bank+CoreDataClass.h"
-#import "Offer+CoreDataClass.h"
 #import "AppDelegate.h"
 
 @implementation Bank

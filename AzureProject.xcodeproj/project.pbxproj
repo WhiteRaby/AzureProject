@@ -39,12 +39,12 @@
 		A8F488DF1E327D6D00048B64 /* User+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F488DD1E327D6D00048B64 /* User+CoreDataProperties.m */; };
 		A8F488ED1E327D9200048B64 /* Offer+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F488E31E327D9200048B64 /* Offer+CoreDataProperties.m */; };
 		A8F488EF1E327D9200048B64 /* Account+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F488E71E327D9200048B64 /* Account+CoreDataProperties.m */; };
-		A8F488F11E327D9200048B64 /* Bank+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F488EB1E327D9200048B64 /* Bank+CoreDataProperties.m */; };
 		A8F488F21E32A4AC00048B64 /* User+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F488DB1E327D6D00048B64 /* User+CoreDataClass.m */; };
 		A8F488F31E32A56F00048B64 /* Offer+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F488E11E327D9200048B64 /* Offer+CoreDataClass.m */; };
 		A8F488F41E32A56F00048B64 /* Account+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F488E51E327D9200048B64 /* Account+CoreDataClass.m */; };
-		A8F488F51E32A56F00048B64 /* Bank+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F488E91E327D9200048B64 /* Bank+CoreDataClass.m */; };
 		A8F488F81E32CF5600048B64 /* BankDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F488F71E32CF5600048B64 /* BankDetailVC.m */; };
+		A8F488FA1E336EC300048B64 /* Bank+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F488E91E327D9200048B64 /* Bank+CoreDataClass.m */; };
+		A8F488FB1E336EC300048B64 /* Bank+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F488EB1E327D9200048B64 /* Bank+CoreDataProperties.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -431,9 +431,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8F488FA1E336EC300048B64 /* Bank+CoreDataClass.m in Sources */,
+				A8F488FB1E336EC300048B64 /* Bank+CoreDataProperties.m in Sources */,
 				A8F488F31E32A56F00048B64 /* Offer+CoreDataClass.m in Sources */,
 				A8F488F41E32A56F00048B64 /* Account+CoreDataClass.m in Sources */,
-				A8F488F51E32A56F00048B64 /* Bank+CoreDataClass.m in Sources */,
 				A8F488F21E32A4AC00048B64 /* User+CoreDataClass.m in Sources */,
 				A8B861BB1E2724AF00AB7A38 /* AlertController.m in Sources */,
 				A8F488EF1E327D9200048B64 /* Account+CoreDataProperties.m in Sources */,
@@ -444,7 +445,6 @@
 				A8B861B81E27044500AB7A38 /* CreateDepositVC.m in Sources */,
 				A842AE4D1E23EF7900C9D317 /* LoginVC.m in Sources */,
 				A8F488371E32407800048B64 /* ServerManagerV2.m in Sources */,
-				A8F488F11E327D9200048B64 /* Bank+CoreDataProperties.m in Sources */,
 				A8555FDF1E25491000761A43 /* LGSideMenuControllerGesturesHandler.m in Sources */,
 				A8555FD41E25434400761A43 /* SideMenuVC.m in Sources */,
 				A8555FD11E25427800761A43 /* BaseVC.m in Sources */,

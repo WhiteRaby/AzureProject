@@ -18,6 +18,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.infoTextView.textContainer.lineFragmentPadding = 20;
+    self.infoTextView.textContainerInset = UIEdgeInsetsZero;
 
     self.title = self.bank.name;
     self.infoTextView.text = self.bank.info;

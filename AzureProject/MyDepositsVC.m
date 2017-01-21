@@ -78,6 +78,7 @@
     
     Account *account = self.deposits[indexPath.row];
     cell.textLabel.text = account.offer.name;
+    cell.detailTextLabel.text = account.notice;
     
     return cell;
 }
